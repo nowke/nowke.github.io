@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2. Descriptive Statistics
-permalink: /stats/2-descriptive-stats
+permalink: 2-descriptive-stats
 ---
 
 ## Categorical Data

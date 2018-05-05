@@ -74,3 +74,37 @@ Intersection of Event A &amp; Event C refers to **Drawing a card which is both D
 * Event A and Event C are **Mutually exclusive**
 
 ![Event Mutually exclusive](images/event-mutual-exclusive.svg)
+
+## Conditional Probability
+
+### Independent Events
+
+> Two Events (say A and B) are said to to **independent** of each other, if probability that one event occurs doesn't affect the probability of the other event.
+
+***Example***
+
+**Event A**: Roll 2 on die first time, **Event B**: Roll 6 on die second time
+
+* Here A and B are independent of each other, i.e. Event B is no way affected by the outcome of Event A.
+* P(A ∩ B) = P(A) * P(B) = $${1 \over 6} \times {1 \over 6}$$ = $${1 \over 36}$$ 
+
+**For independent events,** 
+
+$$P(B\big|A) =P(A)$$
+
+### Dependent Events
+
+> Two Events (say A and B) are **dependent** if the occurrence of the first event affects the occurrence of the second event.
+
+***Example***
+
+**Event A**: Draw Diamond Ace from the deck, **Event B**: Draw Spades Ace from the remaining deck.
+
+* Here, after the completion of Event A, you're left with one less card in the deck.
+* Therefore, P(B\|A) = $${1 \over 52} \times {1 \over 51}$$ = $${1 \over 2601}$$
+
+**For dependent events,**
+
+$$P(B\big|A) ={P(A ∩ B) \over P(A)}$$
+
+$$P(A\big|B) ={P(A ∩ B) \over P(B)}$$

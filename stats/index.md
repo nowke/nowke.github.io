@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Stats 101
+title: Statistics and Probability
 permalink: /stats/
 ---
 
-# Stat Title
-This is stats
-
-## Stat Title 2
+1. [Basics](population-and-sample)<br>
+    [1.1 Population and Sample](population-and-sample)<br>
+    [1.2 Probability](probability-basics)<br>
+    [1.3 Descriptive Statistics](descriptive-stats)<br>

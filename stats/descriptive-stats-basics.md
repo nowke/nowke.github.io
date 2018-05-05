@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Descriptive Statistics Basics
-permalink: /stats/descriptive-stats-basics
+title: Descriptive Statistics
+permalink: /stats/descriptive-stats
 ---
 
 ## Averaging data
@@ -16,7 +16,7 @@ grades = [60, 75, 78, 48, 89, 94, 69, 98, 91, 71,
 
 ### Mean
 
-**Arithmetic Mean**
+#### Arithmetic Mean
 
 > Arithmetic mean is calculated as **sum** of all numbers in the dataset and dividing by the **total** number of values
 
@@ -32,7 +32,7 @@ print(f'Arithmetic mean = {arithmetic_mean}')
 Arithmetic mean = 76.7
 ```
 
-**Geometric Mean**
+#### Geometric Mean
 
 > Geometric mean is calculated as **Nth root** of **Product** of all the numbers, where N is the total number of values in the dataset
 
