@@ -108,3 +108,57 @@ $$P(B\big|A) =P(A)$$
 $$P(B\big|A) ={P(A ∩ B) \over P(A)}$$
 
 $$P(A\big|B) ={P(A ∩ B) \over P(B)}$$
+
+### Bayes' Theorem
+
+***Example***: 
+
+When India wins a cricket match, Mr. Harsha predicts the win correctly 70% of the time. When India loses the match, Harsha will predict win 35% of the time.
+
+Given that, India wins cricket match 60% of the time, what are the chances of India winning Whenever Harsha predicts that India wins?
+
+This is clearly a conditional probability problem. 
+
+**Event W**: India wins the match<br>
+**Event L**: India loses the match<br>
+**Event Y**: Harsha predicts India wins the match<br>
+**Event N**: Harsha predicts India loses the match<br>
+
+What's been asked? The probability that India wins (W), given Harsha predicts the win (Y)
+
+i.e. we need to calculate **P(W \| Y)**
+
+What do we know so far,
+
+* P(W) = 60% (India wins 60% of the time)
+* P(Y \| W) = 70% (Harsha predicts 70% given India wins)
+
+Now,
+
+$$P(A|B) = {P(A ∩ B) \over P(B)}$$
+
+$$P(B|A) = {P(A ∩ B) \over P(A)}$$
+
+Equating them gives,
+
+$$P(A ∩ B) = P(A|B) \times P(B) = P(B|A) \times P(A)$$
+
+Hence,
+
+$$P(B|A) = {P(A|B) \times P(B) \over P(A)} \color{red}{\leftarrow Bayes'\,Theorem}$$
+
+Now we can calculate ***P(W\|Y)*** as,
+
+$$P(W|Y) = {P(Y|W) \times P(W) \over P(Y)}$$
+
+How to calculate **$$P(Y)$$**? i.e. Probability of Harsha predicting India's win. Harsha predicts India's win in two scenarios - when India actually wins and when India loses. Therefore,
+
+$$P(Y) = 60\% (India\,win) \times 70\% (Predict\,win) + 40\% (India\,lose) \times 35\% (Predict\,win)$$
+
+$$P(Y) = 56\%$$
+
+Therefore,
+
+$$P(W|Y) = {70\% \times 60\% \over 56\%} = 75\%$$
+
+Bottom-line is, **if Harsha says India wins, there's 75% chance that India actually wins**
