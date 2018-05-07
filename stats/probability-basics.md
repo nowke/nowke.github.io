@@ -115,7 +115,7 @@ $$P(A\big|B) ={P(A ∩ B) \over P(B)}$$
 
 When India wins a cricket match, Mr. Harsha predicts the win correctly 70% of the time. When India loses the match, Harsha will predict win 35% of the time.
 
-Given that, India wins cricket match 60% of the time, what are the chances of India winning Whenever Harsha predicts that India wins?
+Given that, India wins cricket match 60% of the time, what are the chances of India winning whenever Harsha predicts that India wins?
 
 This is clearly a conditional probability problem. 
 
