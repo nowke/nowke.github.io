@@ -13,7 +13,7 @@ A Binomial experiment has the following properties.
 * Each trial can be either success or failure
 * Probability of success (P) on each trial remains the same
 
-***Example: *** Number of heads in after flipping a coin 10 times
+***Example:*** Number of heads in after flipping a coin 10 times
 
 * The experiment is conducted for fixed number of trials - 10
 * Probability of getting head in one trial does not affect the other
@@ -80,3 +80,49 @@ $$P(x\,\,of\,\,n) = ^{n}C_x\,\,p^x\,(1-p)^{(n-x)}$$
 Hence, the **general binomial probability equation** is,
 
 $$P(x\,\,of\,\,n) = {n! \over x!(n-x)!}\,p^x\,(1-p)^{(n-x)}$$
+
+### Plotting Binomial Distribution
+
+Let $$X$$ be a random variable = No. of heads from flipping a coin 5 times
+
+$$P(X = 0) = {5! \over 0!(5-0)!}\,0.5^0\,(1-{1 \over 2})^{(5-0)} = {1 \over 32}$$
+
+$$P(X = 1) = {5 \over 32},$$
+$$P(X = 2) = {10 \over 32},$$
+$$P(X = 3) = {10 \over 32},$$
+$$P(X = 4) = {5 \over 32},$$
+$$P(X = 5) = {1 \over 32}$$
+
+```python
+import math
+import matplotlib.pyplot as plt
+
+def compute_binomial_probability(x, n, p):
+    outcomes = math.factorial(n) / (math.factorial(x) * math.factorial(n - x))
+    probability_of_each_outcome = p ** x * (1 - p) ** (n - x)
+    return outcomes * probability_of_each_outcome
+
+def plot_binomial_distribution_graph(n, p):
+    probabilities = list(map(lambda x: compute_binomial_probability(x, n, p), range(0, n+1)))
+    plt.bar(list(range(0, n+1)), probabilities)
+
+plot_binomial_distribution_graph(5, 0.5)
+```
+
+![Binomial Distribution 1](images/binomial-distribution-1.png)
+
+Let's plot the distribution for flipping a coin 10 times.
+
+```python
+plot_binomial_distribution_graph(10, 0.5)
+```
+![Binomial Distribution 2](images/binomial-distribution-2.png)
+
+As we can observe, with more trials, the plot tends to look like **Normal distribution**
+
+Plotting the graph for a biased coin - $$P(head) = 0.7, P(tail) = 0.3$$
+
+```python
+plot_binomial_distribution_graph(10, 0.7)
+```
+![Binomial Distribution 3](images/binomial-distribution-3.png)
