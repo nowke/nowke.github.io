@@ -81,6 +81,14 @@ Hence, the **general binomial probability equation** is,
 
 $$P(x\,\,of\,\,n) = {n! \over x!(n-x)!}\,p^x\,(1-p)^{(n-x)}$$
 
+Also,
+
+$$Expected\,Value: E[X] = n \cdot p$$
+
+$$Variance: \sigma^2 = n \cdot p \cdot (1 - p)$$
+
+$$Standard\,deviation: \sigma = \sqrt{n \cdot p \cdot (1 - p)}$$
+
 ### Plotting Binomial Distribution
 
 Let $$X$$ be a random variable = No. of heads from flipping a coin 5 times
@@ -161,6 +169,6 @@ plt.bar(['0', '1'], [0.35, 0.65])
 
 $$Expected\,Value: E[X] = p$$
 
-$$Variance: \sigma{2} = p(1 - p)$$
+$$Variance: \sigma^2 = p(1 - p)$$
 
 $$Standard\,deviation: \sigma = \sqrt{p(1 - p)}$$
