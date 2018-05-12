@@ -98,11 +98,30 @@ import math
 import matplotlib.pyplot as plt
 
 def compute_binomial_probability(x, n, p):
+    """Returns the probability of getting `x` success outcomes in `n` trials,
+    probability of getting success being `p`
+
+    Arguments:
+
+    x - number of trials of the event
+    n - number of trials
+    p - probability of the event
+
+    """
     outcomes = math.factorial(n) / (math.factorial(x) * math.factorial(n - x))
     probability_of_each_outcome = p ** x * (1 - p) ** (n - x)
     return outcomes * probability_of_each_outcome
 
 def plot_binomial_distribution_graph(n, p):
+    """Plots Binomial distribution graph of an event with `n` trials,
+    probability of getting success of the event being `p` for values `0` to `n`
+
+    Arguments:
+
+    n - number of trials
+    p - probability of the event
+
+    """
     probabilities = list(map(lambda x: compute_binomial_probability(x, n, p), range(0, n+1)))
     plt.bar(list(range(0, n+1)), probabilities)
 
@@ -126,3 +145,22 @@ Plotting the graph for a biased coin - $$P(head) = 0.7, P(tail) = 0.3$$
 plot_binomial_distribution_graph(10, 0.7)
 ```
 ![Binomial Distribution 3](images/binomial-distribution-3.png)
+
+## Bernoulli distribution
+
+Bernoulli distribution is a **discrete probability distribution** of a random variable which has only two outcomes ("success" or a "failure"). It is named after Swiss mathematician [**Jacon Bernoulli**](https://en.wikipedia.org/wiki/Jacob_Bernoulli). It is a special case of Binomial distribution for n = 1.
+
+For example, probability (**p**) of scoring a goal in last 10 minutes is **0.35** (success), probability of not scoring a goal in last 10 minutes (failure) is **1 - p = 0.65**.
+
+Plotting Bernoulli distribution with probability for **p = 0.65**,
+
+```
+plt.bar(['0', '1'], [0.35, 0.65])
+```
+![Bernoulli distribution](images/bernoulli-distribution.png)
+
+$$Expected\,Value: E[X] = p$$
+
+$$Variance: \sigma{2} = p(1 - p)$$
+
+$$Standard\,deviation: \sigma = \sqrt{p(1 - p)}$$

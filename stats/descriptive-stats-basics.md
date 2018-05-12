@@ -225,6 +225,15 @@ Standard Deviation = 16.462381358722073
 
 ```python
 def z_score(raw_score, mean, std_deviation):
+    """Calculates the statistical `z-score` value given `raw_score`, `mean`,
+    and `std_deviation`
+
+    Arguments:
+
+    raw_score - Raw score
+    mean - Mean
+    std_deviation - Standard deviation
+    """
     return (raw_score - mean) / std_deviation
 
 z_score_60 = z_score(60, arithmetic_mean, std_deviation)
