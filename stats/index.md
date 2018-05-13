@@ -10,3 +10,4 @@ permalink: /stats/
 [4. Random Variables](random-variables)<br>
 [5. Binomial Distribution](binomial-distribution)<br>
 [6. Normal Distributions](normal-distributions)<br>
+[7. Confidence intervals](confidence-intervals)<br>
