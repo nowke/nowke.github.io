@@ -138,3 +138,10 @@ Let's calculate the **Standard Deviation** for **X**
 
 $$Standard\,Deviation\,=\sqrt{2.2975} = 1.516 $$
 
+#### Mean of sum & difference of two random variables
+
+If we have two random variables X and Y, $$\mu_x$$ and $$\mu_y$$ are the respective means,
+
+&nbsp;$$E(X + Y) = \mu_{x + y} = \mu_x + \mu_y$$
+
+&nbsp;$$E(X - Y) = \mu_{x - y} = \mu_x - \mu_y$$

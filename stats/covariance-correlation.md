@@ -73,3 +73,50 @@ If two variables are independent of each other, then there is no correlation or 
 
 * Bitcoin price v/s speed of light
 * Your mobile usage per day v/s neighbor's electricity bill
+
+### Calculating covariance and correlation
+
+$$Covariance(x, y) = { {\sum_{i=1}^n (x_i - \bar{x}) \cdot (y_i - \bar{y})} \over n-1} = E[XY] - \mu_x\mu_y$$ 
+
+$$Correlation(x, y) = {Covariance(x, y) \over \sigma_x \cdot \sigma_y}$$
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([50, 30, 67, 103, 49, 156, 33, 78])
+y = np.array([601, 304, 801, 905, 359, 1100, 205, 801])
+
+plt.scatter(x, y)
+```
+![Correlation scatter](images/correlation-scatter.png)
+```python
+def covariance(x, y):
+    if len(x) != len(y) or len(x) < 1: return None
+    mean_x, mean_y = np.mean(x), np.mean(y)
+    numerator = np.sum([(a - mean_x) * (b - mean_y) for (a, b) in zip(x, y)])
+    return numerator / (len(x) - 1)
+
+def correlation(x, y):
+    cov = covariance(x, y)
+    if cov: return cov / (np.std(x, ddof=1) * np.std(y, ddof=1))
+
+print(f'Covariance = {covariance(x, y)}')
+print(f'Correlation = {correlation(x, y)}')
+```
+```
+Covariance = 12194.142857142857
+Correlation = 0.9072220542468226
+```
+
+### Variance of sum and difference
+
+If we have two random variables X and Y,
+
+Variance of X + Y is given by,
+
+$$Var(X + Y) = \sigma_x + \sigma_y = \sigma_x^2 + \sigma_y^2 + 2 \cdot Cov(X, Y)$$
+
+Variance of X - Y is given by,
+
+$$Var(X - Y) = \sigma_x - \sigma_y = \sigma_x^2 + \sigma_y^2 - 2 \cdot Cov(X, Y)$$
