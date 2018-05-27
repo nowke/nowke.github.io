@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 _notebooks
 .DS_Store
+node_modules
+build
+*.log
