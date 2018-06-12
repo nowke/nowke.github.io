@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="427px" height="310px" viewBox="0 0 427 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>scatter-plot-outliers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M73.5,303.5 L73.5,4.25929421" id="Line" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+        <path id="Line-decoration-1" d="M76.5,15.0592942 L73.5,4.25929421 L70.5,15.0592942" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+        <path d="M42.5,274.5 L422.547365,274.5" id="Line-2" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+        <path id="Line-2-decoration-1" d="M411.747365,277.5 L422.547365,274.5 L411.747365,271.5" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+        <text id="Variable-A" font-family="TimesNewRomanPS-BoldMT, Times New Roman" font-size="14" font-weight="bold" fill="#000000">
+            <tspan x="220.171875" y="307">Variable A</tspan>
+        </text>
+        <text id="Variable-B" font-family="TimesNewRomanPS-BoldMT, Times New Roman" font-size="14" font-weight="bold" fill="#000000">
+            <tspan x="0.171875" y="127">Variable B</tspan>
+        </text>
+        <circle id="Oval" fill="#000000" cx="129.5" cy="195.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="145.5" cy="149.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="97.5" cy="242.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="215.5" cy="149.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="189.5" cy="114.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="359.5" cy="27.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="256.5" cy="49.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="215.5" cy="123.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="350.5" cy="63.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="296.5" cy="58.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="300.5" cy="140.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="247.5" cy="95.5" r="4.5"></circle>
+        <circle id="Oval" fill="#000000" cx="288.5" cy="95.5" r="4.5"></circle>
+        <circle id="Oval" fill="#FF0000" cx="106.5" cy="32.5" r="4.5"></circle>
+        <circle id="Oval" fill="#FF0000" cx="300.5" cy="247.5" r="4.5"></circle>
+        <text id="Oulier" font-family="TimesNewRomanPSMT, Times New Roman" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="351.117188" y="188">Oulier</tspan>
+        </text>
+        <path d="M354.5,195.5 L306.5,239.5" id="Line-3" stroke="#000000" fill="#000000" stroke-linecap="square"></path>
+        <path id="Line-3-decoration-1" d="M306.5,239.5 L316.488439,234.413636 L312.434091,229.990712 L306.5,239.5 Z" stroke="#000000" fill="#000000" stroke-linecap="square"></path>
+        <text id="Oulier" font-family="TimesNewRomanPSMT, Times New Roman" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="172.117188" y="25">Oulier</tspan>
+        </text>
+        <path d="M164.5,23.5 L114.5,30.5" id="Line-3" stroke="#000000" fill="#000000" stroke-linecap="square"></path>
+        <path id="Line-3-decoration-1" d="M114.5,30.5 L125.611634,31.9736285 L124.779747,26.031578 L114.5,30.5 Z" stroke="#000000" fill="#000000" stroke-linecap="square"></path>
+    </g>
+</svg>
