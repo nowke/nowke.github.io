@@ -6,13 +6,20 @@ import Layout from "src/components/Layout";
 export default ({ data }) => {
   return (
     <Layout>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Link
-          to={node.fields.slug}
-        >
-          <p>{node.frontmatter.title}</p>
-        </Link>
-      ))}
+      <br />
+      <div className="markdown-body">
+        <h1>Statistics and Probability</h1>
+        <p>
+          {data.allMarkdownRemark.edges.map(({ node }, index) => (
+            <React.Fragment>
+              <Link to={node.fields.slug}>
+                {index + 1}. {node.frontmatter.title}
+              </Link>
+              <br />
+            </React.Fragment>
+          ))}
+        </p>
+      </div>
     </Layout>
   );
 };
