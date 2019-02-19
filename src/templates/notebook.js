@@ -5,7 +5,6 @@ import Layout from "src/components/Layout";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(data)
   return (
     <Layout>
       <br />
