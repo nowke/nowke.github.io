@@ -1,0 +1,635 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.937508378f640da82c3e.css">code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.container{box-sizing:border-box;margin-left:auto;margin-right:auto;padding-right:8px;padding-left:8px}.container-fluid{padding-right:16px;padding-left:16px}@media only screen and (min-width:576px){.container{width:560px;max-width:100%}}@media only screen and (min-width:768px){.container{width:752px;max-width:100%}}@media only screen and (min-width:992px){.container{width:976px;max-width:100%}}@media only screen and (min-width:1200px){.container{width:1184px;max-width:100%}}.row{box-sizing:border-box;display:-webkit-flex;display:flex;-webkit-flex:0 1 auto;flex:0 1 auto;-webkit-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-right:-8px;margin-left:-8px}.row.reverse{-webkit-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-flex-direction:column-reverse;flex-direction:column-reverse}.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-offset-0,.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-offset-0,.col-xl-offset-1,.col-xl-offset-2,.col-xl-offset-3,.col-xl-offset-4,.col-xl-offset-5,.col-xl-offset-6,.col-xl-offset-7,.col-xl-offset-8,.col-xl-offset-9,.col-xl-offset-10,.col-xl-offset-11,.col-xl-offset-12,.col-xs,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;-webkit-flex-basis:100%;flex-basis:100%;padding-right:8px;padding-left:8px;max-width:100%}.col-xs{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-xs-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-xs-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-xs-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-xs-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-xs{-webkit-justify-content:center;justify-content:center;text-align:center}.end-xs{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-xs{-webkit-align-items:flex-start;align-items:flex-start}.middle-xs{-webkit-align-items:center;align-items:center}.bottom-xs{-webkit-align-items:flex-end;align-items:flex-end}.around-xs{-webkit-justify-content:space-around;justify-content:space-around}.between-xs{-webkit-justify-content:space-between;justify-content:space-between}.first-xs{-webkit-order:-1;order:-1}.last-xs{-webkit-order:1;order:1}.initial-order-xs{-webkit-order:initial;order:0}@media only screen and (min-width:576px){.col-sm{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-sm-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-sm-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-sm-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-sm-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-sm{-webkit-justify-content:center;justify-content:center;text-align:center}.end-sm{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-sm{-webkit-align-items:flex-start;align-items:flex-start}.middle-sm{-webkit-align-items:center;align-items:center}.bottom-sm{-webkit-align-items:flex-end;align-items:flex-end}.around-sm{-webkit-justify-content:space-around;justify-content:space-around}.between-sm{-webkit-justify-content:space-between;justify-content:space-between}.first-sm{-webkit-order:-1;order:-1}.last-sm{-webkit-order:1;order:1}.initial-order-sm{-webkit-order:initial;order:0}}@media only screen and (min-width:768px){.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-offset-0,.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-md{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-md-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-md-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-md-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-md-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-md{-webkit-justify-content:center;justify-content:center;text-align:center}.end-md{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-md{-webkit-align-items:flex-start;align-items:flex-start}.middle-md{-webkit-align-items:center;align-items:center}.bottom-md{-webkit-align-items:flex-end;align-items:flex-end}.around-md{-webkit-justify-content:space-around;justify-content:space-around}.between-md{-webkit-justify-content:space-between;justify-content:space-between}.first-md{-webkit-order:-1;order:-1}.last-md{-webkit-order:1;order:1}.initial-order-md{-webkit-order:initial;order:0}}@media only screen and (min-width:992px){.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-lg{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-lg-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-lg-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-lg-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-lg-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-lg{-webkit-justify-content:center;justify-content:center;text-align:center}.end-lg{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-lg{-webkit-align-items:flex-start;align-items:flex-start}.middle-lg{-webkit-align-items:center;align-items:center}.bottom-lg{-webkit-align-items:flex-end;align-items:flex-end}.around-lg{-webkit-justify-content:space-around;justify-content:space-around}.between-lg{-webkit-justify-content:space-between;justify-content:space-between}.first-lg{-webkit-order:-1;order:-1}.last-lg{-webkit-order:1;order:1}.initial-order-lg{-webkit-order:initial;order:0}}@media only screen and (min-width:1200px){.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-offset-0,.col-xl-offset-1,.col-xl-offset-2,.col-xl-offset-3,.col-xl-offset-4,.col-xl-offset-5,.col-xl-offset-6,.col-xl-offset-7,.col-xl-offset-8,.col-xl-offset-9,.col-xl-offset-10,.col-xl-offset-11,.col-xl-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-xl{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-xl-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xl-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xl-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-xl-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xl-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xl-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-xl-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xl-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xl-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-xl-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xl-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xl-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-xl-offset-0{margin-left:0}.col-xl-offset-1{margin-left:8.33333333%}.col-xl-offset-2{margin-left:16.66666667%}.col-xl-offset-3{margin-left:25%}.col-xl-offset-4{margin-left:33.33333333%}.col-xl-offset-5{margin-left:41.66666667%}.col-xl-offset-6{margin-left:50%}.col-xl-offset-7{margin-left:58.33333333%}.col-xl-offset-8{margin-left:66.66666667%}.col-xl-offset-9{margin-left:75%}.col-xl-offset-10{margin-left:83.33333333%}.col-xl-offset-11{margin-left:91.66666667%}.start-xl{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-xl{-webkit-justify-content:center;justify-content:center;text-align:center}.end-xl{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-xl{-webkit-align-items:flex-start;align-items:flex-start}.middle-xl{-webkit-align-items:center;align-items:center}.bottom-xl{-webkit-align-items:flex-end;align-items:flex-end}.around-xl{-webkit-justify-content:space-around;justify-content:space-around}.between-xl{-webkit-justify-content:space-between;justify-content:space-between}.first-xl{-webkit-order:-1;order:-1}.last-xl{-webkit-order:1;order:1}.initial-order-xl{-webkit-order:initial;order:0}}@media only screen and (max-width:575px){.hidden-xs{display:none}}@media only screen and (min-width:576px) and (max-width:767px){.hidden-sm{display:none}}@media only screen and (min-width:768px) and (max-width:991px){.hidden-md{display:none}}@media only screen and (min-width:992px) and (max-width:1199px){.hidden-lg{display:none}}@media only screen and (min-width:1200px){.hidden-xl{display:none}}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#333;overflow:hidden;line-height:1.6;word-wrap:break-word}.markdown-body a{background:transparent}.markdown-body a:active,.markdown-body a:hover{outline:0}.markdown-body strong{font-weight:700}.markdown-body h1{font-size:2em;margin:.67em 0}.markdown-body hr{box-sizing:content-box}.markdown-body pre{overflow:auto}.markdown-body code,.markdown-body kbd,.markdown-body pre{font-family:monospace,monospace;font-size:1em}.markdown-body input{color:inherit;font:inherit;margin:0}.markdown-body html input[disabled]{cursor:default}.markdown-body input{line-height:normal}.markdown-body input[type=checkbox]{box-sizing:border-box;padding:0}.markdown-body table{border-collapse:collapse;border-spacing:0}.markdown-body td,.markdown-body th{padding:0}.markdown-body *{box-sizing:border-box}.markdown-body input{font:13px/1.4 Helvetica,arial,freesans,clean,sans-serif,Segoe UI Emoji,Segoe UI Symbol}.markdown-body a{color:#4183c4;text-decoration:none}.markdown-body a:active,.markdown-body a:focus,.markdown-body a:hover{text-decoration:underline}.markdown-body hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid #ddd}.markdown-body hr:after,.markdown-body hr:before{display:table;content:""}.markdown-body hr:after{clear:both}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:15px;margin-bottom:15px;line-height:1.1}.markdown-body h1{font-size:30px}.markdown-body h2{font-size:21px}.markdown-body h3{font-size:16px}.markdown-body h4{font-size:14px}.markdown-body h5{font-size:12px}.markdown-body h6{font-size:11px}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding:0;margin-top:0;margin-bottom:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body pre{margin-top:0;margin-bottom:0}.markdown-body kbd{background-color:#e7e7e7;background-image:linear-gradient(#fefefe,#e7e7e7);background-repeat:repeat-x;border-radius:2px;border:1px solid #cfcfcf;color:#000;padding:3px 5px;line-height:10px;font:11px Consolas,Liberation Mono,Menlo,Courier,monospace;display:inline-block}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body .anchor{position:absolute;top:0;bottom:0;left:0;display:block;padding-right:6px;padding-left:30px;margin-left:-30px}.markdown-body .anchor:focus{outline:none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position:relative;margin-top:1em;margin-bottom:16px;font-weight:700;line-height:1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display:none;color:#000;vertical-align:middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{height:1em;padding-left:8px;margin-left:-30px;line-height:1;text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display:inline-block}.markdown-body h1{font-size:2.25em;line-height:1.2}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.75em;line-height:1.225}.markdown-body h3{font-size:1.5em;line-height:1.43}.markdown-body h4{font-size:1.25em}.markdown-body h5{font-size:1em}.markdown-body h6{font-size:1em;color:#777}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:4px;padding:0;margin:16px 0;background-color:#e7e7e7;border:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body blockquote{padding:0 15px;color:#777;border-left:4px solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:border-box}.markdown-body .octicon{font:normal normal 16px octicons-anchor;line-height:1;display:inline-block;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-body .octicon-link:before{content:"\F05C"}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{float:left;margin:.3em 0 .25em -1.6em;vertical-align:middle}body{margin:0;font-family:"Noto Serif",serif;background:#fff}::selection{background:#da2d2d;color:#fff}.gatsby-resp-image-image{border:1px solid #000}</style><meta name="generator" content="Gatsby 2.1.4"/><title data-react-helmet="true">nowke | Navaneesh Kumar</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet"/><script data-react-helmet="true" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async=""></script><link as="script" rel="preload" href="/webpack-runtime-99ac9efd09bf85fe116f.js"/><link as="script" rel="preload" href="/app-09973328ae794b6d3ad9.js"/><link as="script" rel="preload" href="/styles-c169e290e1298d872141.js"/><link as="script" rel="preload" href="/1-ad5f9a487a8aed54e0d3.js"/><link as="script" rel="preload" href="/component---src-templates-notebook-js-83603a12744ae7a224bd.js"/><link as="fetch" rel="preload" href="/static/d/321/path---stats-kaggle-statistics-2-distributions-3-aa-518-kvlumhCbinyB1u8rZMAzHIvg.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><nav class="sc-bdVaJa bTTEyg"><div class="sc-bwzfXH jqVXUU"><a style="text-decoration:none;color:unset" href="/"><h1 class="sc-htpNat jUONbd">nowke</h1></a><div class="sc-bxivhb hdcUOX"><ul class="sc-ifAKCX kqKUjj"><li class="sc-EHOje laLWot"><a href="https://github.com/nowke" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=" class="sc-bZQynM cVYEbT"/></a></li><li class="sc-EHOje laLWot"><a href="https://www.linkedin.com/in/nowke/" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TGlua2VkSW4gaWNvbjwvdGl0bGU+PHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+" class="sc-bZQynM cVYEbT"/></a></li><li class="sc-EHOje laLWot"><a href="https://twitter.com/inowke" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+VHdpdHRlciBpY29uPC90aXRsZT48cGF0aCBkPSJNMjMuOTU0IDQuNTY5Yy0uODg1LjM4OS0xLjgzLjY1NC0yLjgyNS43NzUgMS4wMTQtLjYxMSAxLjc5NC0xLjU3NCAyLjE2My0yLjcyMy0uOTUxLjU1NS0yLjAwNS45NTktMy4xMjcgMS4xODQtLjg5Ni0uOTU5LTIuMTczLTEuNTU5LTMuNTkxLTEuNTU5LTIuNzE3IDAtNC45MiAyLjIwMy00LjkyIDQuOTE3IDAgLjM5LjA0NS43NjUuMTI3IDEuMTI0QzcuNjkxIDguMDk0IDQuMDY2IDYuMTMgMS42NCAzLjE2MWMtLjQyNy43MjItLjY2NiAxLjU2MS0uNjY2IDIuNDc1IDAgMS43MS44NyAzLjIxMyAyLjE4OCA0LjA5Ni0uODA3LS4wMjYtMS41NjYtLjI0OC0yLjIyOC0uNjE2di4wNjFjMCAyLjM4NSAxLjY5MyA0LjM3NCAzLjk0NiA0LjgyNy0uNDEzLjExMS0uODQ5LjE3MS0xLjI5Ni4xNzEtLjMxNCAwLS42MTUtLjAzLS45MTYtLjA4Ni42MzEgMS45NTMgMi40NDUgMy4zNzcgNC42MDQgMy40MTctMS42OCAxLjMxOS0zLjgwOSAyLjEwNS02LjEwMiAyLjEwNS0uMzkgMC0uNzc5LS4wMjMtMS4xNy0uMDY3IDIuMTg5IDEuMzk0IDQuNzY4IDIuMjA5IDcuNTU3IDIuMjA5IDkuMDU0IDAgMTMuOTk5LTcuNDk2IDEzLjk5OS0xMy45ODYgMC0uMjA5IDAtLjQyLS4wMTUtLjYzLjk2MS0uNjg5IDEuOC0xLjU2IDIuNDYtMi41NDhsLS4wNDctLjAyeiIvPjwvc3ZnPg==" class="sc-bZQynM cVYEbT"/></a></li></ul></div></div></nav><div class="sc-gzVnrw bAgrrG"><br/><div class="markdown-body"><h1>Statistics 2. Distributions</h1><div><p>Originally published in <a href="https://www.kaggle.com/nowke9/statistics-2-distributions">Kaggle</a></p>
+<h1>Introduction</h1>
+<p>A distribution of data is a representation (or function) showing all possible values (or intervals) and how often those values occur.</p>
+<p>For <strong>categorical data</strong>, we'll often see percentage or exact number for each of the category.<br>
+For <strong>numerical data</strong>, we'll see the data split into appropriate sized buckets ordered from smallest to largest</p>
+<p>When a distribution is plotted into a graph, we can observe different shapes of the curve. Based on the shape and other attributes, there exists many types of distributions. A few statistical distributions are,</p>
+<ul>
+<li>Bernoulli Distribution</li>
+<li>Binomial Distribution</li>
+<li>Cumulative frequency distribution</li>
+<li>Bimodal distribution</li>
+<li>Gaussian distribution (Normal distribution)</li>
+<li>Uniform distribution</li>
+</ul>
+<p>Let's setup our dataset,</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token keyword">import</span> math
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot
+<span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats
+
+matches    <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'../input/matches.csv'</span><span class="token punctuation">)</span>
+deliveries <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'../input/deliveries.csv'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h1>Cumulative relative frequency graph</h1>
+<p>Let's take <code class="language-text">win_by_wickets</code> dataset and plot a frequency distribution graph.</p>
+<p>X-axis - Win by wickets (value from 1 to 10), Y-axis - Number of instances (or frequency) of win-by-wicket margin</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_data <span class="token operator">=</span> matches<span class="token punctuation">[</span>matches<span class="token punctuation">.</span>win_by_wickets <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>win_by_wickets
+win_by_wickets_freq <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>win_by_wickets_freq<span class="token punctuation">)</span>
+plt <span class="token operator">=</span> win_by_wickets_freq<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">"Frequency distribution graph - Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Frequency"</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">1      3
+2      5
+3     16
+4     37
+5     63
+6     76
+7     74
+8     51
+9     35
+10    11
+Name: win_by_wickets, dtype: int64
+
+
+
+
+
+Text(0,0.5,&#39;Frequency&#39;)</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/272de09657823bba0f51595963d0432f/59bff/output_3_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 386px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 72.7979274611399%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADAElEQVQ4y42UyU8TURzHJ3FhK21DWQyyJKIxKXIy8eAf4BkvGg7KxYsharzo2ZMH/wQPKiCUMLKIFmWxUxZboAtdKHQGKdDpTAstbam1FebNzzdLoRqi/ibf+b3l9z75vd97eYTRaCRUO4vVgNWEZcCqx2pW+3VqvxFLq/oadVyK0RDFxvP8i3Q6PcNxnIVl2dloNErhthWPWyORiDW2E6e8i/Y5rJm9RHKaYyOUNCfFSfOJRGJ6d3d33O12S3BCi2EO+IcFJsfBMzEC4BEANnMnxqyvr7dJQE0qlaKkAYTQT1EUBVlIxCtB2E9khXQchIXhAWGW7BayoxEhbWflOYQ/HHsotXO53CFN03L9tBg4IwElEP6BAlc84+Bh6k0InB/fwSzZAz/MPGSWOCUlUV4jB2KgyDBMqwTUSfUrAMUjIFK24eLB8nYLnB9IGZjDwPQCC0teJ+yn91Xs78DqTCZDHWWo+EKiGBgFS+8xMG+OQtK2Da9N3bAT3T0RWFsMLGR4mExBdpQExrYFlr7togwVYP/wIET5LchmA0VAWgbq8ZatR0BcO2mz+TAL3L1OoCkGKBMLzrHBIuAWmEZGIbQxD07nTRWYF2k62Fo45eMaqrUTuBjwD+8DbV0Hiwwk/wCOwGbIBu7ljhOByrUBOJDceHgSsYwHxR89QEGKRpb+MHKMDaIZsgfhQ0F7tk1kGh5BoY2vyOW+jesuosN8XlgNrsnXpvJ7Zt+uHIGSXYflLiyvToHw5Cls4mxsQ3HwT7yHxbEBgOk05F0xGDaPA8e5YJu+A94DBM83eIBU7ArRThAlpi+Onslg8lvu0zNf1j220jnxODA7P+Rnu7pW3Z89XvOrtZU5stc30fvSv0MygfB0wP+qry/g9U35vfZbATLErrRTDh/Ewy3EDWPtaZxlmaTrBFHeQhCl5Y31msuXmkrqKioqq6uqtXqtQVel1+n02kp9Q019xbW2q2e0Op3uYktzaU1tmeZCY6PmfLXBQPynSa9MLdY59TU69bfgX52+K7hrQS0uAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/272de09657823bba0f51595963d0432f/59bff/output_3_2.png"
+        srcset="/static/272de09657823bba0f51595963d0432f/70971/output_3_2.png 148w,
+/static/272de09657823bba0f51595963d0432f/a56c7/output_3_2.png 295w,
+/static/272de09657823bba0f51595963d0432f/59bff/output_3_2.png 386w"
+        sizes="(max-width: 386px) 100vw, 386px"
+      />
+  </span>
+  </a></p>
+<p>Now, let's plot <strong>Relative frequency distribution graph</strong> for the same data. Here in <strong>Y-axis</strong>, instead of showing the frequency, we show the <strong>percentage</strong> of the value. We can use <code class="language-text">normalize = True</code> argument for <code class="language-text">pandas.Series.value_counts</code> method</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_rel_freq <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">,</span> normalize <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>win_by_wickets_rel_freq<span class="token punctuation">)</span>
+plt <span class="token operator">=</span> win_by_wickets_rel_freq<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">"Relative Frequency distribution graph - Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Relative frequency (%)"</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">1     0.008086
+2     0.013477
+3     0.043127
+4     0.099730
+5     0.169811
+6     0.204852
+7     0.199461
+8     0.137466
+9     0.094340
+10    0.029650
+Name: win_by_wickets, dtype: float64
+
+
+
+
+
+Text(0,0.5,&#39;Relative frequency (%)&#39;)</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/b235d1686bc5b9a1c3564f42623946c3/72f4d/output_5_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 402px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 69.90049751243781%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAADGklEQVQ4y42UbUhTURjHj7FNLTeduJmyimkIESlqWZZvEfVNo1foe33qUxBIUBD0JUgoTGlIiRObzU03XxPfqi/a8l1Jzc1lbc7du3t9Iy2149NzbjOFonouf54L539+53/uufeSsLAwwiomJiZEJpMlyeXyhNDQ0HjsiSi9dK9QJIYQkrDv4CG9Pjl1r0wpT9ylVmrkMrleoVDsYULvfuwqYrfbdyAv3GAwHOZ5fgQ1IYriKMdxE0yCILzn/Ny4ODc/Pvq2eww1znvQwwsjbCwQCIzhnFHsnsnJyTsEAHBxEma1WnPgHzXcUg/DrQ0AXQsAgbXfxjFIGUlLSwtHYITRaMyllH7b+FnfUZRd6KNLc8vUNbBEHfYa6qi30C+1n+nXj/PSmOTa2FhlQExaQqKjo3ezLVssliwESssyYrBLK/OfFqD5ySQ47BZ412CFZbsXVj7OwTpQyYNaZz7cdilRq9XxCFRVV1dnbwcGjRJQ8C5Bh9EtATEhrDb6YXZoGuoabRD0bwGjoqJ0CFSaTKbsPyb8sgi8W4T2Cgas+Qls8oNv0A1VZlMQCFtA3HIcA7KECFiDrYjAHpL/ViF4u/qgo3oGHDbzL+DMgAssthaY9dWBz1crATnOV0pUKpUegWqWcBPIzmPz5Hw3b4C3sxc6fwM6wWpvhylXEbhcRRJw1u8tJTqdLgqBO81mc9b6d7oa3C31L/sptxKggcJC6unspZiQIlA6ZQRSBFKrvY263cV0yl0sBZnnMWGwVMbKyrzt75Rh1ABlY08B7t6Hmdd98KaGh/7GWuhvxoNoFYEfmQZbUxd4PCXwafox9OCcV1MuAymvMrMvJaKi/NmJjvEA5/c452HAJBb3l4ilA0/mVm7fE91t3UL7c4/QU/dC6LGZhZX6GfFz74RornspOp0PRbfzEX/9w+La48GhB+RA/jWWMDIuVqsk5JA2PTlJczWcxGaezdYcLziuOXfg4O7TmdnxR1JO6nIyDscdS03RXcm7oL2cf15zJCMzvqAgXXvp4tGY9NxT+jMF+UrynxWJ0rJ/CCr2b8YfG5DRAaqqI5EAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/b235d1686bc5b9a1c3564f42623946c3/72f4d/output_5_2.png"
+        srcset="/static/b235d1686bc5b9a1c3564f42623946c3/a5fe0/output_5_2.png 148w,
+/static/b235d1686bc5b9a1c3564f42623946c3/7d9eb/output_5_2.png 295w,
+/static/b235d1686bc5b9a1c3564f42623946c3/72f4d/output_5_2.png 402w"
+        sizes="(max-width: 402px) 100vw, 402px"
+      />
+  </span>
+  </a></p>
+<p>From here, we can plot the <strong>cumulative relative frequency graph</strong> using <code class="language-text">pandas.Series.cumsum</code> .</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_cumulative_freq <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">,</span> normalize <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>cumsum<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>win_by_wickets_cumulative_freq<span class="token punctuation">)</span>
+plt <span class="token operator">=</span> win_by_wickets_cumulative_freq<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">"Cumulative relative frequency distribution graph - Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"Win by wickets"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"Cumulative relative frequency (%)"</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">1     0.008086
+2     0.021563
+3     0.064690
+4     0.164420
+5     0.334232
+6     0.539084
+7     0.738544
+8     0.876011
+9     0.970350
+10    1.000000
+Name: win_by_wickets, dtype: float64
+
+
+
+
+
+Text(0,0.5,&#39;Cumulative relative frequency (%)&#39;)</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/caba49a0e852b9e3f80b8c70238c7d19/f7357/output_7_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 417px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.38609112709833%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACgklEQVQ4y42TTUwTURDHlwgxSIxkkbZUimLR6NkTRtN44WCMZ29c1HjCxMQYTiYSj8ZaEk8QQoAG0ACKpQh0Q6iCoAJb2u3HFsu2hWJbKrXtWl67O77dfqQmfDib/87sy+SX/5vJEgRBVGLVVVdXaxUKRaNSqWyoqam5kM9NKpWqQTqX6vz5WZIktSR5StPYpKu/pLmofXzlcn15RcU5zKnFIspwwxmfz2eOxWJcNBp1RSIRFtfucDjsxd8sliefC7U3Hk94oj/dLnZrw9VjZ4MUZblK5ONka2vr8XQ6zcB/h4gfgBD3FOjwLDwI7EE0ErxeANbia6kTiQQtt4piBkvYT1LgFoFh7ML4h1mB8z4RFjkTuuf5BX4/e60ArGtubq7ieb4AzP7jRRSll+wpizLATwaAWaXBNDkHfm+7uOQ3Z++zcQgEvEWHijoc2KGtFCiDSqFSzoiw282A4/sqmD5agTsAqGxpaalMpVL0fkAhmzPsmLOAbWoS9kY2wf5tGTs8BKhWq1XJZLLosOgIj0zIZuR6/q0RrP29kBnbhrWvRwB1Ot2J0hlKwNz8AWLbSaCpCCy+ewPzQ0ZAo6EjgdigWokdLstXFCGNE5Ik7kbRljOEqH4OfRkbRp8HBxAGIgxEeCkIAxEGpu86dyDg9xa3XHX71s3KFM9vlG53T3L7vAPilmVYmwNwzUyAY2IcwIIgyP6ATws2SMQ6wPXbCm07AMHg+o0CkNCoTpN293r7Zmjr9R+H9dXo0oDh2cILA9f2yLDSO6I3D/r0033d+qmerpfbfU6DdZoyGIfed64sPeycsQ3r71B0F+NYOZ+7r1Ih/37E4XEMqzyfD4xYIln2Fxu8o2W1IQVPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/caba49a0e852b9e3f80b8c70238c7d19/f7357/output_7_2.png"
+        srcset="/static/caba49a0e852b9e3f80b8c70238c7d19/50d13/output_7_2.png 148w,
+/static/caba49a0e852b9e3f80b8c70238c7d19/504df/output_7_2.png 295w,
+/static/caba49a0e852b9e3f80b8c70238c7d19/f7357/output_7_2.png 417w"
+        sizes="(max-width: 417px) 100vw, 417px"
+      />
+  </span>
+  </a></p>
+<p>What's the relevance of this representation?</p>
+<p>Let's try to answer this → <strong>What is the probability of winning a match by 6 wickets or less?</strong>. </p>
+<p>Of course we can calculate that using the data. But let's try to figure out from the graph. Draw a line from the top of <strong>"6"</strong> to the Y-axis. We'll draw <strong>Line graph</strong> instead of Bar graph.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">plt <span class="token operator">=</span> win_by_wickets_cumulative_freq<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>line<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axhline<span class="token punctuation">(</span>y <span class="token operator">=</span> win_by_wickets_cumulative_freq<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> xmax <span class="token operator">=</span> <span class="token number">5.5</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">,</span> linestyle<span class="token operator">=</span><span class="token string">'dashed'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axvline<span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">,</span> ymax <span class="token operator">=</span> win_by_wickets_cumulative_freq<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> linestyle<span class="token operator">=</span><span class="token string">'dashed'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">&lt;matplotlib.lines.Line2D at 0x7fd2eff50278&gt;</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/5892675e73c8194ceb2073d9ac2c2935/ca7ad/output_9_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 375px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.19999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB0klEQVQ4y52Ty04bMRSGw4Ow5AF4gISLVBTBngcoZculWSBeALrlJSBVF0hkkVUHISZqCxMCUiBEnVzaaZK5KKgNIXPz2D0+2IGmBCKO9M94ju3Pv308sRiEoiiTpmluWJb1HpQaRaZppdqOnbJtK/W9/mu9bjQ3S6WrOOfFisXiOntlBCBftC3L3EFgpVJZFjlPjAlf0s1dAPJDQmko5jHbcbYQqGnaKk9QxqB/ePAhPOyOR7teSO+nYC5EoG1/QGCz0VgSDokYNDScjsd6PsE2X0Ms9C9Q/fJtjSfcgBAQ9QLC233xbz+MmNVxGTjrw8T7f6Be+7EkgbA6lSDuBI6JhSRird8uM27uEBI9wJ4Gnp6crD23ZS8kzLn1EP4INNxhs9V6K4Hy/KUL7hSKwEhEWccNRgPm8/mVAYcocETh3LANQArAfqUHqi+B2wg0DOOdBPKJATzgjqEknFvv+g9XZUAIdBzn3mHhLL9K8Ur0aBvOqt31sLKPt8cL86cX4PxI5KQIIbh/+H0ROPZxb3dcu7icOVS/zqpHh0mjpk/9rNcSnxUleayqc7VqNV44v5j5tH+wcF0qTeu6nsjlcm+y2ex8FfrK5XIinU4vZjKZib+0opRNvsm8DwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/5892675e73c8194ceb2073d9ac2c2935/ca7ad/output_9_1.png"
+        srcset="/static/5892675e73c8194ceb2073d9ac2c2935/011ba/output_9_1.png 148w,
+/static/5892675e73c8194ceb2073d9ac2c2935/902e9/output_9_1.png 295w,
+/static/5892675e73c8194ceb2073d9ac2c2935/ca7ad/output_9_1.png 375w"
+        sizes="(max-width: 375px) 100vw, 375px"
+      />
+  </span>
+  </a></p>
+<p>We can roughly approximate this value to be around 0.54. </p>
+<p>Thus, using cumulative relative frequency graph, the <strong>probability of winning a match by 6 wickets or less is approximately 54%.</strong></p>
+<p>We can also calculate the <strong>percentile</strong> of a value using the above graph. For example, if a team wins by a margin of <strong>4</strong> wickets, the <strong>percentile</strong> of this match is around <strong>16%</strong></p>
+<h1>Normal distribution</h1>
+<p><strong>Normal distribution</strong> is a continuous probability distribution that describes many natural datasets. It is also known as <strong>bell curve</strong> or <strong>Gaussian distribution</strong>. We see many natural examples that are closer to a normal distribution.</p>
+<ul>
+<li>Heights of people</li>
+<li>Shoe sizes</li>
+<li>Lap duration in a car race</li>
+</ul>
+<p>In a perfect normal distribution, we can see 50% symmetry about the center. Also, the center is - <strong>mean</strong> = <strong>mode</strong> = <strong>median</strong>.</p>
+<p><img src="/normal-distribution-symmetry-2681f954c87f431891682a644142530c.svg" alt="Normal distribution - symmetry"></p>
+<h2>Normal distribution and variance</h2>
+<p>If the variance of the dataset is high, the curve tends to look flat. If variance is low, curve is more steeper.</p>
+<p><img src="/normal-distribution-variance-e69059c5dde3bc83c085b34245f762da.svg" alt="Nomral distribution - variance"></p>
+<p>Let's plot <code class="language-text">win_by_wickets</code> data and watch the curve.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token comment"># Get mean (mu) and std (sigma)</span>
+win_by_wickets_mean<span class="token punctuation">,</span> win_by_wickets_std <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> win_by_wickets_data<span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Plot histogram (normalized) - LIGHT-BLUE</span>
+win_by_wickets_data<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>color<span class="token operator">=</span><span class="token string">'lightblue'</span><span class="token punctuation">,</span> weights <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>win_by_wickets_data<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1.0</span> <span class="token operator">/</span> win_by_wickets_data<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Plot line graph - RED</span>
+win_by_wickets_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> normalize<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>plot<span class="token punctuation">.</span>line<span class="token punctuation">(</span>color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Normal distribution for random points between 1 to 10 with mean, std.</span>
+random_data <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0.001</span><span class="token punctuation">)</span>
+pyplot<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>random_data<span class="token punctuation">,</span> stats<span class="token punctuation">.</span>norm<span class="token punctuation">.</span>pdf<span class="token punctuation">(</span>random_data<span class="token punctuation">,</span> win_by_wickets_mean<span class="token punctuation">,</span> win_by_wickets_std<span class="token punctuation">)</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'green'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">[&lt;matplotlib.lines.Line2D at 0x7fd2efea2e80&gt;]</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/d7ef10b04d223bddce31d300d0235edd/0ac83/output_12_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 381px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.14173228346458%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACkUlEQVQ4y4WSTWsTURSGY13ZnSu1aYUqltaN+htcCP4CcZW1oFWDH5FQpOjCgpsmoAVpi4rtlKYmoVgpLqqIQm0badKkmXx0Msl8T5IxhJjM5M7x3plUpqnggZcz9845D++597pcOGq1Wm+hULirKIpXkqRDEkXRW1UrXrEiehmZ9VYqmlfCe46aO7jXF4/HLxNeTzAYPA//CROLFRioKkVoQ+ufNaVSadoCBgKB4d848F4bS8cyupVKbhqL62kjmhKM6Oc1o96odf6ZJJNewJNMEqBL07STjUajbTnpCrIVY7LmWpI2lzKySaUFc3mHMblc3HSUEygIghAkvGM+n+9Ss9nUHUCwWQBNvQnzsZ9A7YqwtMvBwk4RVgtVkNgM1GuqfRwIHQC6ZFk+5XTYyVaxqgkQTe3B4q4AIQxcTHEQTguwTPOwnoiRQkD2sfwFHsGXQs7QcDq03BktYBUWVvdUWEiWMJC3haFzKRG+ZjNg8HmALmBPNxAhZAFj+TRQiTyEadFyRmDOvMIo8GFrAxqKavXyPG+PnMtm3fsjY5g9ckOD76mE5STkgOzLHl+A2TgNDJ2wgJxoO+z1+/0X8KW0TOu1AdINA+U5GsWECqKSHMIwhCEHFOrkcEZGDJ/ToVkDUSkHLIfFYrFP13X7daIW8KU0RLMCRHJlCGdlLOWQIp0czSmwIWog1X+BzPMvCO/o1NSrIY5jpR+b3yofYxvlTzRbDu2U1LntvfL8NlOm4oxK1PnuXqszWzn5S0HRuSI7YY187uyZ49PzlPvqff/AldHxYU9wYWBslnKPPpsc9Dx8PPT0XcQ9/map/9qteyOPXr4+TdajE4HB67cfjDx5+77/eWilz3Pj5sUxv//EH7jVR0xpxRvOAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/d7ef10b04d223bddce31d300d0235edd/0ac83/output_12_1.png"
+        srcset="/static/d7ef10b04d223bddce31d300d0235edd/786d1/output_12_1.png 148w,
+/static/d7ef10b04d223bddce31d300d0235edd/1c0c0/output_12_1.png 295w,
+/static/d7ef10b04d223bddce31d300d0235edd/0ac83/output_12_1.png 381w"
+        sizes="(max-width: 381px) 100vw, 381px"
+      />
+  </span>
+  </a></p>
+<h2>Plotting the probability density function (PDF)</h2>
+<p>A Probability distribution function (PDF) is a function associated with continuous random variable which desribes the relative probability of the random variable at a given value.</p>
+<p>The probability density function of the normal distribution for a given point (x), mean ($\mu$) and standard deviation ($\sigma$)  is given by,</p>
+$$
+\begin{align}
+f(x, \mu, \sigma) = {1 \over \sqrt{2\pi\sigma^2}} \cdot e^{-{(x - \mu)^2} \over 2\sigma^2}
+\end{align}
+$$
+<p>Let's plot a PDF for some random values (Source: <a href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.normal.html">numpy.random.normal</a>)</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">mu<span class="token punctuation">,</span> sigma <span class="token operator">=</span> <span class="token number">128</span><span class="token punctuation">,</span> <span class="token number">25</span> <span class="token comment"># From the above example</span>
+highest_scores <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span>mu<span class="token punctuation">,</span> sigma<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token comment"># Random 1000 values</span>
+
+count<span class="token punctuation">,</span> bins<span class="token punctuation">,</span> _ <span class="token operator">=</span> pyplot<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>highest_scores<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> normed <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'lightblue'</span><span class="token punctuation">)</span> <span class="token comment"># plot 100 points</span>
+pyplot<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>bins<span class="token punctuation">,</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span>sigma <span class="token operator">*</span> np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span>
+    np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span> <span class="token operator">-</span> <span class="token punctuation">(</span>bins <span class="token operator">-</span> mu<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> sigma<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    linewidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> color <span class="token operator">=</span> <span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token comment"># Plot the PDF</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">/opt/conda/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6571: UserWarning: The &#39;normed&#39; kwarg is deprecated, and has been replaced by the &#39;density&#39; kwarg.
+  warnings.warn(&quot;The &#39;normed&#39; kwarg is deprecated, and has been &quot;
+
+
+
+
+
+[&lt;matplotlib.lines.Line2D at 0x7fd2eee18470&gt;]</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/d3482dbb411f97e2dac64e181a733cd8/e83a1/output_14_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 388px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 64.94845360824742%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACJUlEQVQ4y6WSX2/SUBjGj3MOJ+p0zqkXcrEAV3wCLv0KfhI1Xhg/BPHPjRfGxGyLSjAxcy6amJm4jG0VCip2BbohUFgpJcMWGPS0796zlMG6eWF8kyfPyXvy/s7TnkN8Pt84IcRbKBRuq6r6QFGUu6h7/6g7OPtQFMVbJBwOn0fgeLPZXIX/rFqt9pxEIpFRBBJd15ecfgdlutXuUVPvmuZJe6g2G9Q07REJhUITyLuEwI+sadu2abuKddUutRt7pg32idVjs/V6/QlBH2EJDcM4BDp+IFZdtOJ2GSqKBv09lw+Afr9/EnlXhoHuAUUqwAovwvrGDwDDOAZ1JyR/TcgWug6Z7yK8lurwXqzAVlqAjkkHUDcwEAiwhFPuhP0ELWkblnJViP6SIZZT4FMyC2WpCMOHuhOecm55ALQssNhaVYH7KcErcQfeCghEvdmsQjyeBrvX68OOAoPB4GXkXe0/G8uyumi0pbeonMnSd7kdGhVkGnMUFat0Ib1FNTHPvpviwRQD7DnAx4e33Gq3vww/0pJYgFW5CR/Kf2Dx9y4sFh3hekE2IC6WoVOtHXnYjUbjGfHPzFxE3mRVrjzdzeVzWiq9Hv+8kpxdyyTmU1JilhNSc3yee7khpOaZc5v83Lds4gUvJWLLHC98XeOUJJ80ZDlbLJXus3BjIx6PF539y2uoUTIxzQ45h7qAun7QI+QG6gxq2ul7ydjZKfTTqJsoD4PtA9GtMuPxPKHVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/d3482dbb411f97e2dac64e181a733cd8/e83a1/output_14_2.png"
+        srcset="/static/d3482dbb411f97e2dac64e181a733cd8/44d1d/output_14_2.png 148w,
+/static/d3482dbb411f97e2dac64e181a733cd8/dfefc/output_14_2.png 295w,
+/static/d3482dbb411f97e2dac64e181a733cd8/e83a1/output_14_2.png 388w"
+        sizes="(max-width: 388px) 100vw, 388px"
+      />
+  </span>
+  </a></p>
+<h1>Z-Score</h1>
+<p>A Z-score measures how many standard deviations above or below the mean a data point is. It is calculated as,</p>
+$$
+\begin{align}
+z = {x - \mu \over \sigma}
+\end{align}
+$$
+<ul>
+<li>Positive Z-score → Data point is above the mean</li>
+<li>Negative Z-score → Data point is below the mean</li>
+<li>Close to zero → Data point is close to the mean</li>
+</ul>
+<p><strong>Example</strong>: If a team wins by a margin of 35 runs, what's the z-score? Let's calculate</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_data <span class="token operator">=</span> matches<span class="token punctuation">[</span>matches<span class="token punctuation">.</span>win_by_runs <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>win_by_runs
+win_by_runs_mean<span class="token punctuation">,</span> win_by_runs_std <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> win_by_runs_data<span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+z_score_35 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">35</span> <span class="token operator">-</span> win_by_runs_mean<span class="token punctuation">)</span> <span class="token operator">/</span> win_by_runs_std
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Z-score of 35 is {z_score_35:.2f}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Z-score of 35 is 0.19</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>We can convert from z-score to percentile using a <a href="http://www.z-table.com/">Z-table</a> or <code class="language-text">scipy.stats.norm.cdf</code> function.</p>
+<p><img src="/z-score-curve-13777cf3838d18fecbb815aa16eec568.svg" alt="Z-score-curve"></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">z_score <span class="token operator">=</span> stats<span class="token punctuation">.</span>norm<span class="token punctuation">.</span>cdf<span class="token punctuation">(</span><span class="token number">0.19</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'z-score of 0.19 = {z_score * 100:.2f} percentile'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">z-score of 0.19 = 57.53 percentile</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Probability distribution function in terms of z-score (z) given by,</p>
+$$
+\begin{align}
+f(x, \sigma, z) = {1 \over \sqrt{2\pi\sigma^2e^{z^2}}}
+\end{align}
+$$
+<h1>Empirical rule (68–95–99.7 rule)</h1>
+<p><strong>Empirical rule</strong> also called <strong>68-95-99.7</strong> or <strong>three sigma rule</strong> gives an approximate of values within 1,2 or 3 standard deviations from the mean. The following diagrams represents the value distribution from the mean in a normal distribution.</p>
+<p><img src="/normal-distribution-empirical-a49a34bd113bcd722c5043b7206cb675.svg" alt="Empirical rule">
+<img src="/normal-distribution-57b88fc49db6f6a9d4bd76e925050b61.svg" alt="Normal distribution"></p>
+<h1>Binomial distribution</h1>
+<h2>Binomial experiment</h2>
+<p>A Binomial experiment has the following properties.</p>
+<ul>
+<li>Consists of fixed number of trials (n)</li>
+<li>Trials are independent of each other</li>
+<li>Each trial can be either success or failure</li>
+<li>Probability of success (P) on each trial remains the same</li>
+</ul>
+<p><strong><em>Example:</em></strong> Number of heads in after flipping a coin 10 times</p>
+<ul>
+<li>The experiment is conducted for fixed number of trials - 10</li>
+<li>Probability of getting head in one trial does not affect the other</li>
+<li>Probability of getting head in any trial remains same - 0.5 (in a non-biased coin)</li>
+</ul>
+<h2>Binomial variable</h2>
+<p>A <strong>binomial variable</strong> is the number of successes (x) out of all the trials (n).</p>
+<p>What is the probability of getting 5 heads after flipping a coin 10 times? Here $x = 5$ is a binomial variable.</p>
+<h2>Binomial distribution</h2>
+<p>The probability distribution of a binomial variable is called <strong>Binomial distribution</strong>.</p>
+<p>Let's take the problem statement of flipping a coin - Probability of getting 5 heads after 10 flips? P(X = 5) can be calculated as</p>
+$$
+\begin{align}
+P(X = 5) = No.\,of\,outcomes\,we\,want\,\times Probability\,of\,each\,outcome
+\end{align}
+$$
+<p>For 10 flips, we have a total of $2^{10} =1024$ outcomes. Hence,</p>
+$$
+\begin{align}
+Probability\,of\,each\,outcome={1 \over 1024}
+\end{align}
+$$
+<p>No. of outcomes where exactly 5 heads occur out of 10 flips = $^{10}C_5 = 252$</p>
+$$
+\begin{align}
+P(X = 5) = 252 \times {1 \over 1024} \approx 24.6 \%
+\end{align}
+$$
+<h3>Deriving General Binomial Probability equation</h3>
+<p>Let's take the example of a biased coin instead of a fair coin with <strong>60%</strong> chance of heads and <strong>40%</strong> chance of tails.</p>
+<p>What is the probability of getting 2 heads out of 3 tosses?</p>
+<p>$p = 0.6$ (Probability of getting heads)</p>
+<p>$x = 2$ (no. of success i.e. heads)</p>
+<p>$n = 3$ (no. of trials)</p>
+<p>No. of outcomes we want = $^{n}C_x = ^{3}C_2 = 3$ (HHT, HTH, THH) </p>
+<p>To calculate probability of each outcome, let's take one outcome- HHT</p>
+<ul>
+<li>Probability of getting <strong>H</strong> in trial 1 = 0.6</li>
+<li>Probability of getting <strong>H</strong> in trial 2 = 0.6</li>
+<li>Probability of getting <strong>T</strong> in trial 3 = 0.4</li>
+</ul>
+<p>Hence, probability of getting HHT = $0.6\times0.6\times0.4 = 0.144$</p>
+<p>i.e. $(0.6)^2 \times (0.4)^1 = (0.6)^2 \times (1-0.6)^(2-1) = p^x \times (1-p)^{n-x}$</p>
+<p>Finally,</p>
+<p>Probability of getting 2 heads out of 3 = $3 \times 0.144 = 0.432$</p>
+<p>Putting it together,</p>
+$$
+\begin{align}
+No.\,of\,outcomes\,= ^{n}C_x
+\end{align}
+$$
+$$
+\begin{align}
+Probability\,of\,each\,outcome\,= p^x \times (1-p)^{(n-x)}
+\end{align}
+$$
+$$
+\begin{align}
+P(x\,\,of\,\,n) = ^{n}C_x\,\,p^x\,(1-p)^{(n-x)}
+\end{align}
+$$
+<p>Hence, the <strong>general binomial probability equation</strong> is,</p>
+$$
+\begin{align}
+P(x\,\,of\,\,n) = {n! \over x!(n-x)!}\,p^x\,(1-p)^{(n-x)}
+\end{align}
+$$
+<p>Also,</p>
+$$
+\begin{align}
+Expected\,Value: E[X] = n \cdot p
+\end{align}
+$$
+$$
+\begin{align}
+Variance: \sigma^2 = n \cdot p \cdot (1 - p)
+\end{align}
+$$
+$$
+\begin{align}
+Standard\,deviation: \sigma = \sqrt{n \cdot p \cdot (1 - p)}
+\end{align}
+$$
+<h2>Plotting Binomial Distribution</h2>
+<p>Let $X$ be a random variable = No. of heads from flipping a coin 5 times</p>
+$$
+\begin{align}
+P(X = 0) = {5! \over 0!(5-0)!}\,0.5^0\,(1-{1 \over 2})^{(5-0)} = {1 \over 32}
+\end{align}
+$$
+$$
+\begin{align}
+P(X = 1) = {5 \over 32},
+P(X = 2) = {10 \over 32},
+P(X = 3) = {10 \over 32},
+P(X = 4) = {5 \over 32},
+P(X = 5) = {1 \over 32}
+\end{align}
+$$
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token keyword">def</span> <span class="token function">compute_binomial_probability</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> n<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Returns the probability of getting `x` success outcomes in `n` trials,
+    probability of getting success being `p`
+
+    Arguments:
+
+    x - number of trials of the event
+    n - number of trials
+    p - probability of the event
+
+    """</span>
+    outcomes <span class="token operator">=</span> math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">*</span> math<span class="token punctuation">.</span>factorial<span class="token punctuation">(</span>n <span class="token operator">-</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    probability_of_each_outcome <span class="token operator">=</span> p <span class="token operator">**</span> x <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> p<span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> x<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> outcomes <span class="token operator">*</span> probability_of_each_outcome
+
+<span class="token keyword">def</span> <span class="token function">plot_binomial_distribution_graph</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Plots Binomial distribution graph of an event with `n` trials,
+    probability of getting success of the event being `p` for values `0` to `n`
+
+    Arguments:
+
+    n - number of trials
+    p - probability of the event
+
+    """</span>
+    probabilities <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> compute_binomial_probability<span class="token punctuation">(</span>x<span class="token punctuation">,</span> n<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    pyplot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> probabilities<span class="token punctuation">)</span>
+
+plot_binomial_distribution_graph<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/48bbec3abd781b2335818518e5442441/0ac83/output_22_0.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 381px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.14173228346458%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAC+0lEQVQ4y3WTe0jTURTHh9NlEZURhJZWPqZWfxQk2B+WllD0t/RHUpRiLk1tLiMjiFGt+UjmFKXUfDHNZlOrafM1ZhG+bUqmlbrm3u6nJdbc5v2d7u/no3x04HDuvef8PnzPvefHYGBTqVRbtVptqsVi4ZnN5lWu1Rt5Y1o9b9Jg5Gl0Bt44XhtNJp5ldR13amoqfWho6DTFY/H5/CPwH8tu10JEbhfUqK3AlY3CucJe0M9tXKvT6Z5RQIZEIvGz2Wzz+GwBuwO7k8ROxQtFnU5GzHMn/9UnZ6igzbmJU+vs1UzTOUSSdMRuo4Amk0lM8VxzcnIOYiCVAPIfo7axZd3k5oRa8lHjMHkqW0nuulFP9n+fpnMLaKWU/tZoNObTCouLi9kYuLAMRIgExwKi24gp7QasCgTyYYjIUsLOlDro00zTObsTUfWwFugiFouDlhWiRWUrdgUD3a/9BXok14F6cmbV3a0FMkUiUfAykMr3TBCQ+XYElCNmuFrRAyyOlAaGY+Du1AZoHDRAybtxKH0/DjYH3djqlquqqqhHcS5JI4VNn4ERLYG48h5IlPSBW/wi8ERmO/jceg0Fym+wLUkG/nfkQMzZ1wFdhULhYQqIloC5rV/wvUmBWzOwDuiNgUUdY+B7Ww7HHrRsCGSUlVf42+dt1LhQIpGoZRS5xL1AKdX9CAMRBqKH8mGEgQgrRE9VY3Q8ylegWZsDLY0aGAzGPHqwC8SiQz/nfoNmxgGzdhJE7WPA5MiAKx2CpJpBYCXUQYbiK4Q/7gCf9CYo+aClY4hACZM/7DBu/UUPMP57CulXHlRUBzR/nDB7JNVOR2a1EndfDlhZcdVEYmWXlVPeSbjh9f0GtTVMoCC8eXVEYduI1YsrI04Kmwl+vdrqEltlSazstltN+kwKuCXIb7/HE2mTl3tYDDv4fJrvZUHZXubxS+yoeyV7ziRn7GOGXgxMypN5saPSfD0i4wP4FQrP7RGx7MCom37X8+s9GSHRgWdTMg8oGt/s+ANh7+8sbWpJmQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/48bbec3abd781b2335818518e5442441/0ac83/output_22_0.png"
+        srcset="/static/48bbec3abd781b2335818518e5442441/786d1/output_22_0.png 148w,
+/static/48bbec3abd781b2335818518e5442441/1c0c0/output_22_0.png 295w,
+/static/48bbec3abd781b2335818518e5442441/0ac83/output_22_0.png 381w"
+        sizes="(max-width: 381px) 100vw, 381px"
+      />
+  </span>
+  </a></p>
+<p>Let's plot the distribution for flipping a coin 10 times.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">plot_binomial_distribution_graph<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/cc771149b32847e04611d72025c830ea/0ac83/output_24_0.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 381px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.14173228346458%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACoUlEQVQ4y4WSbUhTURjHL0EYfYg+9KWl4CBTIVpkfZBIe3GUL3O6XojAFUREEpksIiWbX5bku3fTDQqlQeSXGPTBGKkTddOygrEii0gna/fu5bYK28u9O/fp3Ou25ob1wP+ee895zu8+z/8cgiCIHLVaLfF4PDf9fv8tn8+nSRdN+zReitYse7waj5fSUDStyczBag4EAi0ul+sEIYTZbN4D/4mmZ4vw1hv9Zw4ualgEWiwWaSQSEbLjWCwWl9RqLM59C4W50o4Jbnh2iYtyiEP83/WEIgKQpmlS4G3W6XR7MVBYAD4RXBxvw59P5t18Weckrxq08/WDs/yFh3PiPF5OD3EvRVEGsULce244HI6nAQEDxTbMjiUovT8OGAa1+hk4a3SI82v/E/MhE7hFq9XKotEomwQKYxI4+toNpR0JoGEWzpkcKc8SqVlAYmVlRZJZoVCBm/kNPdZFOPJgEuowTIl1xmiHT9QvYFZjG1aY09bWJsvwUExW4BYreqagcmAaFOQM1A2uQY922eDlBzrVelaFTqdznYfJlgTPKnqzgccwcOKjb0NgTuKUxR4Q4hEbRyiCHxiI5L1TqLJ/GtWQMwgDEQai49029MLlFUxG2GscPJsA6sUKrVZrPhuLpcy2fw1BjcEBVXoHnCLt4lg7NAcq0ytxrDfOQ8PIG7g+6lx3sfE9NAq8TSQ5UBD68dO3Go5+d3ymgl1j75mS9jFG3jUelHePMye7J5jqPluwdsDGVPVNMkpyKljTbwtW4/fn79zBL1TIH4ux7LLb3SkAt+6W5m83PX6ad6mptYgob8ndcVqbt1/VWHToxtCufQ338gsVV4vK7oxIStR3pcXKa4Xltx9JDl9ulxYrrhQTB1p3HjzfXHCxsVm2sLCw7Q+xZxiUXETKxQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/cc771149b32847e04611d72025c830ea/0ac83/output_24_0.png"
+        srcset="/static/cc771149b32847e04611d72025c830ea/786d1/output_24_0.png 148w,
+/static/cc771149b32847e04611d72025c830ea/1c0c0/output_24_0.png 295w,
+/static/cc771149b32847e04611d72025c830ea/0ac83/output_24_0.png 381w"
+        sizes="(max-width: 381px) 100vw, 381px"
+      />
+  </span>
+  </a></p>
+<p>As we can observe, with more trials, the plot tends to look like <strong>Normal distribution</strong></p>
+<p>Plotting the graph for a biased coin - $P(head) = 0.7, P(tail) = 0.3$</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">plot_binomial_distribution_graph<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0.7</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/b7a576c741cf0a54f6b6c74792d07691/0ac83/output_26_0.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 381px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.14173228346458%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAChUlEQVQ4y5WSXUhTYRjHV9KNF9FVkDVQcji7UIoSAh1CUKBtc/ZBFERCFwVC1EALQ4JSlzVim3ND0hVzUEjrZkH5temc0xujVgO7aNOd7Zxt52gz3YfbOU/ve/RQLkN64M/78n/P8+P/vucRiVAlEonChYWFO/F4XB2NRndUkIioF8OkOhQhBe826r3n8/lOYd4ejUZTAf9RN177IZBg//IJghjAQJHD4ShOpVJp5OWQ1pGy+eK43/uqjtHsQ4c/+3aOELwUBlIUpce8Aq1WewQB8QFw/yh8tLSa4T6Fljm5wc3V6ye5et0k77Mcx/eSJNnDJxwaGjqcTCZzAjD/Kjl2w+p3f4eqjhE4b5oGlXEKLvV5eT8fuNtoNEr/TCiAhK0AfOEJgKx7HAE90NAzBRfN08J3WxPabLbS7YACVAAOzgShWjO2BZjNsVhbgLtMJlPZTgmD9Cpoh+eh9okTzvV6oBEJvSWgtwT3txjfGwpHNhJaLBZJPhAvgtLZHN+sRKnw2oDeD0PP6t1Q8eADvP9CbgCJMA8s2EyY2QSxgtBV8LDxQiAWAVm53s0iIIuALAKyxx+NsBPzUTxqsEiEDXxCq9UqyWQy2w7xV2oNjBMBUJlnoNE8C4peL79e6JsFudELJx+7YHB2kR9gkqJM/F82GAylKysrUQRdyqTTdDKVZn78XGPmAjG67c1HprL9HSPXOWmFzsnUPRtnFDoXrTK46NNPR5kz2jG6pms41tTvXV+ORboxsFAsFu+z2+3izs4uqcc9eWjglV18ufmuVCRrO7hf2VIsu3JLWtNqKTp29X5JufJmWW3L86IT19pLJHXXy6tbXx6QKJslR+VNlf7Pc3t/ARkFIt9huLERAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/b7a576c741cf0a54f6b6c74792d07691/0ac83/output_26_0.png"
+        srcset="/static/b7a576c741cf0a54f6b6c74792d07691/786d1/output_26_0.png 148w,
+/static/b7a576c741cf0a54f6b6c74792d07691/1c0c0/output_26_0.png 295w,
+/static/b7a576c741cf0a54f6b6c74792d07691/0ac83/output_26_0.png 381w"
+        sizes="(max-width: 381px) 100vw, 381px"
+      />
+  </span>
+  </a></p>
+<h1>Bernoulli distribution</h1>
+<p>Bernoulli distribution is a <strong>discrete probability distribution</strong> of a random variable which has only two outcomes ("success" or a "failure"). It is named after Swiss mathematician <a href="https://en.wikipedia.org/wiki/Jacob_Bernoulli"><strong>Jacon Bernoulli</strong></a>. It is a special case of Binomial distribution for n = 1.</p>
+<p>For example, probability (<strong>p</strong>) of scoring a goal in last 10 minutes is <strong>0.35</strong> (success), probability of not scoring a goal in last 10 minutes (failure) is <strong>1 - p = 0.65</strong>.</p>
+<p>Plotting Bernoulli distribution with probability for <strong>p = 0.65</strong>,</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">pyplot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0.35</span><span class="token punctuation">,</span> <span class="token number">0.65</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">&lt;BarContainer object of 2 artists&gt;</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/2efc34e223586ad5fef0848a738eeeb4/ca7ad/output_28_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 375px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.19999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACWElEQVQ4y42S7UtTcRTHB/mmWmkPMN9oOetVf0NbJWG9jKJSpN7EHtxmuhu5FRgG6gQprMyiWuAikK3dPfbwriBfmGM2nDqXVjLdbbGSXIR6736n8/vtDkYk7Adf7rnnnvM533vuVSjwJBKJQ4Ig2DKZjBXFbaaltMB9SaW5r/8Icx2pZcE+OzNzmPIU8Xi8A8o4zye/w8n7E9D09COcdRZ0HuMT98bBObkKG7mfg0WgUe5ZQ22gxFJJecKu1/kpsULvFqu5gLi33ceksvrFLTr3WutoHDtzvQwYi8XMMlAi/zliPk/wGbkZnCa72nhy4FqY7O8MMdXbwzQnXvHNoZ1VBwN+SiYNlIa9aIYQFJQKLbJp3YE4VFq8oLaHYV9niKnOFiKYEzkegesyMBqNWooOKXezHXYHpssDrmdTRteHNBwbeCudGR4jp4beA9Xp4TE4fusdOF7NMuANf5kOYSVl6golQXFpVMIlkz3tPqDCGCp0brjoHGfALv9UeUApu2jqfbMAOy1e6SAuHItoIeDyYfdlHgyuiAws1+Hvb4ae1/OgNL2QsJjUXg0yqW1hUmXxEv1IhH1ldEibSWlNEWgtAPsYMJ9dNPegQ6XJy4A4mYnGVfib6F0FIO4Qm3lSWlOHMeZEzpdEYE52+GvZSB1ub/WgqxDgZCYao0PQjUwUXtkn77Ckhq6m0uwhzOGflX7K2/rs4WB924OXR7c139HWGp9oVM2ORlVTX2MNxjta7h451+/R/lj6rDUNBbV4r60xPNJUX7jdwGoMjzVKzLUMeBvmYhH1X4Owu6n4HOGNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/2efc34e223586ad5fef0848a738eeeb4/ca7ad/output_28_1.png"
+        srcset="/static/2efc34e223586ad5fef0848a738eeeb4/011ba/output_28_1.png 148w,
+/static/2efc34e223586ad5fef0848a738eeeb4/902e9/output_28_1.png 295w,
+/static/2efc34e223586ad5fef0848a738eeeb4/ca7ad/output_28_1.png 375w"
+        sizes="(max-width: 375px) 100vw, 375px"
+      />
+  </span>
+  </a></p>
+$$
+\begin{align}
+Expected\,Value: E[X] = p
+\end{align}
+$$
+$$
+\begin{align}
+Variance: \sigma^2 = p(1 - p)
+\end{align}
+$$
+$$
+\begin{align}
+Standard\,deviation: \sigma = \sqrt{p(1 - p)}
+\end{align}
+$$</div></div><br/><br/><br/></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-notebook-js","jsonName":"stats-kaggle-statistics-2-distributions-3aa","path":"/stats-kaggle/statistics-2-distributions/"};window.dataPath="321/path---stats-kaggle-statistics-2-distributions-3-aa-518-kvlumhCbinyB1u8rZMAzHIvg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-09973328ae794b6d3ad9.js"],"component---src-templates-notebook-js":["/component---src-templates-notebook-js-83603a12744ae7a224bd.js"],"component---src-pages-index-js":["/component---src-pages-index-js-f2b747c43159e2c793e9.js"],"pages-manifest":["/pages-manifest-5c310ab7efb115e733ad.js"]};/*]]>*/</script><script src="/component---src-templates-notebook-js-83603a12744ae7a224bd.js" async=""></script><script src="/1-ad5f9a487a8aed54e0d3.js" async=""></script><script src="/styles-c169e290e1298d872141.js" async=""></script><script src="/app-09973328ae794b6d3ad9.js" async=""></script><script src="/webpack-runtime-99ac9efd09bf85fe116f.js" async=""></script></body></html>

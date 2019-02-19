@@ -1,0 +1,599 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.937508378f640da82c3e.css">code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.container{box-sizing:border-box;margin-left:auto;margin-right:auto;padding-right:8px;padding-left:8px}.container-fluid{padding-right:16px;padding-left:16px}@media only screen and (min-width:576px){.container{width:560px;max-width:100%}}@media only screen and (min-width:768px){.container{width:752px;max-width:100%}}@media only screen and (min-width:992px){.container{width:976px;max-width:100%}}@media only screen and (min-width:1200px){.container{width:1184px;max-width:100%}}.row{box-sizing:border-box;display:-webkit-flex;display:flex;-webkit-flex:0 1 auto;flex:0 1 auto;-webkit-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-right:-8px;margin-left:-8px}.row.reverse{-webkit-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-flex-direction:column-reverse;flex-direction:column-reverse}.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-offset-0,.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-offset-0,.col-xl-offset-1,.col-xl-offset-2,.col-xl-offset-3,.col-xl-offset-4,.col-xl-offset-5,.col-xl-offset-6,.col-xl-offset-7,.col-xl-offset-8,.col-xl-offset-9,.col-xl-offset-10,.col-xl-offset-11,.col-xl-offset-12,.col-xs,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;-webkit-flex-basis:100%;flex-basis:100%;padding-right:8px;padding-left:8px;max-width:100%}.col-xs{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-xs-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-xs-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-xs-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-xs-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-xs{-webkit-justify-content:center;justify-content:center;text-align:center}.end-xs{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-xs{-webkit-align-items:flex-start;align-items:flex-start}.middle-xs{-webkit-align-items:center;align-items:center}.bottom-xs{-webkit-align-items:flex-end;align-items:flex-end}.around-xs{-webkit-justify-content:space-around;justify-content:space-around}.between-xs{-webkit-justify-content:space-between;justify-content:space-between}.first-xs{-webkit-order:-1;order:-1}.last-xs{-webkit-order:1;order:1}.initial-order-xs{-webkit-order:initial;order:0}@media only screen and (min-width:576px){.col-sm{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-sm-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-sm-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-sm-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-sm-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-sm{-webkit-justify-content:center;justify-content:center;text-align:center}.end-sm{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-sm{-webkit-align-items:flex-start;align-items:flex-start}.middle-sm{-webkit-align-items:center;align-items:center}.bottom-sm{-webkit-align-items:flex-end;align-items:flex-end}.around-sm{-webkit-justify-content:space-around;justify-content:space-around}.between-sm{-webkit-justify-content:space-between;justify-content:space-between}.first-sm{-webkit-order:-1;order:-1}.last-sm{-webkit-order:1;order:1}.initial-order-sm{-webkit-order:initial;order:0}}@media only screen and (min-width:768px){.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-offset-0,.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-md{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-md-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-md-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-md-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-md-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-md{-webkit-justify-content:center;justify-content:center;text-align:center}.end-md{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-md{-webkit-align-items:flex-start;align-items:flex-start}.middle-md{-webkit-align-items:center;align-items:center}.bottom-md{-webkit-align-items:flex-end;align-items:flex-end}.around-md{-webkit-justify-content:space-around;justify-content:space-around}.between-md{-webkit-justify-content:space-between;justify-content:space-between}.first-md{-webkit-order:-1;order:-1}.last-md{-webkit-order:1;order:1}.initial-order-md{-webkit-order:initial;order:0}}@media only screen and (min-width:992px){.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-lg{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-lg-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-lg-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-lg-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-lg-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-lg{-webkit-justify-content:center;justify-content:center;text-align:center}.end-lg{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-lg{-webkit-align-items:flex-start;align-items:flex-start}.middle-lg{-webkit-align-items:center;align-items:center}.bottom-lg{-webkit-align-items:flex-end;align-items:flex-end}.around-lg{-webkit-justify-content:space-around;justify-content:space-around}.between-lg{-webkit-justify-content:space-between;justify-content:space-between}.first-lg{-webkit-order:-1;order:-1}.last-lg{-webkit-order:1;order:1}.initial-order-lg{-webkit-order:initial;order:0}}@media only screen and (min-width:1200px){.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-offset-0,.col-xl-offset-1,.col-xl-offset-2,.col-xl-offset-3,.col-xl-offset-4,.col-xl-offset-5,.col-xl-offset-6,.col-xl-offset-7,.col-xl-offset-8,.col-xl-offset-9,.col-xl-offset-10,.col-xl-offset-11,.col-xl-offset-12{box-sizing:border-box;-webkit-flex:0 0 auto;flex:0 0 auto;padding-right:8px;padding-left:8px}.col-xl{-webkit-flex-grow:1;flex-grow:1;-webkit-flex-basis:0;flex-basis:0;max-width:100%}.col-xl-1{-webkit-flex-basis:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xl-2{-webkit-flex-basis:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xl-3{-webkit-flex-basis:25%;flex-basis:25%;max-width:25%}.col-xl-4{-webkit-flex-basis:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xl-5{-webkit-flex-basis:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xl-6{-webkit-flex-basis:50%;flex-basis:50%;max-width:50%}.col-xl-7{-webkit-flex-basis:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xl-8{-webkit-flex-basis:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xl-9{-webkit-flex-basis:75%;flex-basis:75%;max-width:75%}.col-xl-10{-webkit-flex-basis:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xl-11{-webkit-flex-basis:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xl-12{-webkit-flex-basis:100%;flex-basis:100%;max-width:100%}.col-xl-offset-0{margin-left:0}.col-xl-offset-1{margin-left:8.33333333%}.col-xl-offset-2{margin-left:16.66666667%}.col-xl-offset-3{margin-left:25%}.col-xl-offset-4{margin-left:33.33333333%}.col-xl-offset-5{margin-left:41.66666667%}.col-xl-offset-6{margin-left:50%}.col-xl-offset-7{margin-left:58.33333333%}.col-xl-offset-8{margin-left:66.66666667%}.col-xl-offset-9{margin-left:75%}.col-xl-offset-10{margin-left:83.33333333%}.col-xl-offset-11{margin-left:91.66666667%}.start-xl{-webkit-justify-content:flex-start;justify-content:flex-start;text-align:start}.center-xl{-webkit-justify-content:center;justify-content:center;text-align:center}.end-xl{-webkit-justify-content:flex-end;justify-content:flex-end;text-align:end}.top-xl{-webkit-align-items:flex-start;align-items:flex-start}.middle-xl{-webkit-align-items:center;align-items:center}.bottom-xl{-webkit-align-items:flex-end;align-items:flex-end}.around-xl{-webkit-justify-content:space-around;justify-content:space-around}.between-xl{-webkit-justify-content:space-between;justify-content:space-between}.first-xl{-webkit-order:-1;order:-1}.last-xl{-webkit-order:1;order:1}.initial-order-xl{-webkit-order:initial;order:0}}@media only screen and (max-width:575px){.hidden-xs{display:none}}@media only screen and (min-width:576px) and (max-width:767px){.hidden-sm{display:none}}@media only screen and (min-width:768px) and (max-width:991px){.hidden-md{display:none}}@media only screen and (min-width:992px) and (max-width:1199px){.hidden-lg{display:none}}@media only screen and (min-width:1200px){.hidden-xl{display:none}}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#333;overflow:hidden;line-height:1.6;word-wrap:break-word}.markdown-body a{background:transparent}.markdown-body a:active,.markdown-body a:hover{outline:0}.markdown-body strong{font-weight:700}.markdown-body h1{font-size:2em;margin:.67em 0}.markdown-body hr{box-sizing:content-box}.markdown-body pre{overflow:auto}.markdown-body code,.markdown-body kbd,.markdown-body pre{font-family:monospace,monospace;font-size:1em}.markdown-body input{color:inherit;font:inherit;margin:0}.markdown-body html input[disabled]{cursor:default}.markdown-body input{line-height:normal}.markdown-body input[type=checkbox]{box-sizing:border-box;padding:0}.markdown-body table{border-collapse:collapse;border-spacing:0}.markdown-body td,.markdown-body th{padding:0}.markdown-body *{box-sizing:border-box}.markdown-body input{font:13px/1.4 Helvetica,arial,freesans,clean,sans-serif,Segoe UI Emoji,Segoe UI Symbol}.markdown-body a{color:#4183c4;text-decoration:none}.markdown-body a:active,.markdown-body a:focus,.markdown-body a:hover{text-decoration:underline}.markdown-body hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid #ddd}.markdown-body hr:after,.markdown-body hr:before{display:table;content:""}.markdown-body hr:after{clear:both}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:15px;margin-bottom:15px;line-height:1.1}.markdown-body h1{font-size:30px}.markdown-body h2{font-size:21px}.markdown-body h3{font-size:16px}.markdown-body h4{font-size:14px}.markdown-body h5{font-size:12px}.markdown-body h6{font-size:11px}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding:0;margin-top:0;margin-bottom:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body pre{margin-top:0;margin-bottom:0}.markdown-body kbd{background-color:#e7e7e7;background-image:linear-gradient(#fefefe,#e7e7e7);background-repeat:repeat-x;border-radius:2px;border:1px solid #cfcfcf;color:#000;padding:3px 5px;line-height:10px;font:11px Consolas,Liberation Mono,Menlo,Courier,monospace;display:inline-block}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body .anchor{position:absolute;top:0;bottom:0;left:0;display:block;padding-right:6px;padding-left:30px;margin-left:-30px}.markdown-body .anchor:focus{outline:none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position:relative;margin-top:1em;margin-bottom:16px;font-weight:700;line-height:1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display:none;color:#000;vertical-align:middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{height:1em;padding-left:8px;margin-left:-30px;line-height:1;text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display:inline-block}.markdown-body h1{font-size:2.25em;line-height:1.2}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.75em;line-height:1.225}.markdown-body h3{font-size:1.5em;line-height:1.43}.markdown-body h4{font-size:1.25em}.markdown-body h5{font-size:1em}.markdown-body h6{font-size:1em;color:#777}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:4px;padding:0;margin:16px 0;background-color:#e7e7e7;border:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body blockquote{padding:0 15px;color:#777;border-left:4px solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:border-box}.markdown-body .octicon{font:normal normal 16px octicons-anchor;line-height:1;display:inline-block;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-body .octicon-link:before{content:"\F05C"}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{float:left;margin:.3em 0 .25em -1.6em;vertical-align:middle}body{margin:0;font-family:"Noto Serif",serif;background:#fff}::selection{background:#da2d2d;color:#fff}.gatsby-resp-image-image{border:1px solid #000}</style><meta name="generator" content="Gatsby 2.1.4"/><title data-react-helmet="true">nowke | Navaneesh Kumar</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet"/><script data-react-helmet="true" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async=""></script><link as="script" rel="preload" href="/webpack-runtime-99ac9efd09bf85fe116f.js"/><link as="script" rel="preload" href="/app-09973328ae794b6d3ad9.js"/><link as="script" rel="preload" href="/styles-c169e290e1298d872141.js"/><link as="script" rel="preload" href="/1-ad5f9a487a8aed54e0d3.js"/><link as="script" rel="preload" href="/component---src-templates-notebook-js-83603a12744ae7a224bd.js"/><link as="fetch" rel="preload" href="/static/d/212/path---stats-kaggle-statistics-1-summarizing-quantitative-data-c-37-4f7-8iA5cECqJj6HvwqTGFAbqel2xOw.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><nav class="sc-bdVaJa bTTEyg"><div class="sc-bwzfXH jqVXUU"><a style="text-decoration:none;color:unset" href="/"><h1 class="sc-htpNat jUONbd">nowke</h1></a><div class="sc-bxivhb hdcUOX"><ul class="sc-ifAKCX kqKUjj"><li class="sc-EHOje laLWot"><a href="https://github.com/nowke" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=" class="sc-bZQynM cVYEbT"/></a></li><li class="sc-EHOje laLWot"><a href="https://www.linkedin.com/in/nowke/" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TGlua2VkSW4gaWNvbjwvdGl0bGU+PHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+" class="sc-bZQynM cVYEbT"/></a></li><li class="sc-EHOje laLWot"><a href="https://twitter.com/inowke" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+VHdpdHRlciBpY29uPC90aXRsZT48cGF0aCBkPSJNMjMuOTU0IDQuNTY5Yy0uODg1LjM4OS0xLjgzLjY1NC0yLjgyNS43NzUgMS4wMTQtLjYxMSAxLjc5NC0xLjU3NCAyLjE2My0yLjcyMy0uOTUxLjU1NS0yLjAwNS45NTktMy4xMjcgMS4xODQtLjg5Ni0uOTU5LTIuMTczLTEuNTU5LTMuNTkxLTEuNTU5LTIuNzE3IDAtNC45MiAyLjIwMy00LjkyIDQuOTE3IDAgLjM5LjA0NS43NjUuMTI3IDEuMTI0QzcuNjkxIDguMDk0IDQuMDY2IDYuMTMgMS42NCAzLjE2MWMtLjQyNy43MjItLjY2NiAxLjU2MS0uNjY2IDIuNDc1IDAgMS43MS44NyAzLjIxMyAyLjE4OCA0LjA5Ni0uODA3LS4wMjYtMS41NjYtLjI0OC0yLjIyOC0uNjE2di4wNjFjMCAyLjM4NSAxLjY5MyA0LjM3NCAzLjk0NiA0LjgyNy0uNDEzLjExMS0uODQ5LjE3MS0xLjI5Ni4xNzEtLjMxNCAwLS42MTUtLjAzLS45MTYtLjA4Ni42MzEgMS45NTMgMi40NDUgMy4zNzcgNC42MDQgMy40MTctMS42OCAxLjMxOS0zLjgwOSAyLjEwNS02LjEwMiAyLjEwNS0uMzkgMC0uNzc5LS4wMjMtMS4xNy0uMDY3IDIuMTg5IDEuMzk0IDQuNzY4IDIuMjA5IDcuNTU3IDIuMjA5IDkuMDU0IDAgMTMuOTk5LTcuNDk2IDEzLjk5OS0xMy45ODYgMC0uMjA5IDAtLjQyLS4wMTUtLjYzLjk2MS0uNjg5IDEuOC0xLjU2IDIuNDYtMi41NDhsLS4wNDctLjAyeiIvPjwvc3ZnPg==" class="sc-bZQynM cVYEbT"/></a></li></ul></div></div></nav><div class="sc-gzVnrw bAgrrG"><br/><div class="markdown-body"><h1>Statistics 1. Summarizing Quantitative data</h1><div><p>Originally published in <a href="https://www.kaggle.com/nowke9/statistics-1-summarizing-quantitative-data">Kaggle</a></p>
+<h1>Table of contents</h1>
+<ul>
+<li>Introduction</li>
+<li>
+<p>Measuring center</p>
+<ul>
+<li>
+<p>Mean</p>
+<ul>
+<li>Arithmetic Mean</li>
+<li>Geometric Mean</li>
+</ul>
+</li>
+<li>Median</li>
+<li>Mode</li>
+</ul>
+</li>
+<li>
+<p>Measuring spread (variability)</p>
+<ul>
+<li>Range</li>
+<li>
+<p>Interquartile Range (IQR)</p>
+<ul>
+<li>Percentiles</li>
+</ul>
+</li>
+<li>
+<p>Variance and Standard deviation</p>
+<ul>
+<li>Comparison with IQR</li>
+</ul>
+</li>
+<li>Distribution graph</li>
+<li>Mean Absolute Deviation (MAD)</li>
+<li>Box and whisker plots</li>
+</ul>
+</li>
+</ul>
+<h1>Introduction</h1>
+<p><strong>Quantitative data</strong> is information that can be measured in real numbers. Examples include,</p>
+<ul>
+<li>Height of a person</li>
+<li>Speed of Tesla cars</li>
+<li>Runs scored by a batsman</li>
+<li>Wickets taken by a bowler</li>
+</ul>
+<p>In this notebook, we'll explore various statistical concepts involved in <strong>summarizing quantitative data</strong> with the help of <strong>Indian Premier League (IPL)</strong> dataset.</p>
+<p>The data consists of two CSV files for all IPL matches played from  <strong>2008 - 2018</strong> (11 seasons)</p>
+<ul>
+<li><strong><code class="language-text">matches.csv</code></strong> - match-by-match data</li>
+<li><strong><code class="language-text">deliveries.csv</code></strong> - ball-by-ball data</li>
+</ul>
+<p>Let's setup <code class="language-text">pandas</code> dataframes for the above files and import necessary libraries.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token keyword">import</span> math
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats
+<span class="token keyword">import</span> os
+
+matches    <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'../input/matches.csv'</span><span class="token punctuation">)</span>
+deliveries <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'../input/deliveries.csv'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Let's inspect the <code class="language-text">matches</code> data before stepping into the concepts</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Number of rows    = {len(matches)}'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Number of columns = {len(matches.columns)}'</span><span class="token punctuation">)</span>
+matches<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Number of rows    = 696
+Number of columns = 18</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>season</th>
+      <th>city</th>
+      <th>date</th>
+      <th>team1</th>
+      <th>team2</th>
+      <th>toss_winner</th>
+      <th>toss_decision</th>
+      <th>result</th>
+      <th>dl_applied</th>
+      <th>winner</th>
+      <th>win_by_runs</th>
+      <th>win_by_wickets</th>
+      <th>player_of_match</th>
+      <th>venue</th>
+      <th>umpire1</th>
+      <th>umpire2</th>
+      <th>umpire3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2017</td>
+      <td>Hyderabad</td>
+      <td>2017-04-05</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>Royal Challengers Bangalore</td>
+      <td>Royal Challengers Bangalore</td>
+      <td>field</td>
+      <td>normal</td>
+      <td>0</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>35</td>
+      <td>0</td>
+      <td>Yuvraj Singh</td>
+      <td>Rajiv Gandhi International Stadium, Uppal</td>
+      <td>AY Dandekar</td>
+      <td>NJ Llong</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>2017</td>
+      <td>Pune</td>
+      <td>2017-04-06</td>
+      <td>Mumbai Indians</td>
+      <td>Rising Pune Supergiant</td>
+      <td>Rising Pune Supergiant</td>
+      <td>field</td>
+      <td>normal</td>
+      <td>0</td>
+      <td>Rising Pune Supergiant</td>
+      <td>0</td>
+      <td>7</td>
+      <td>SPD Smith</td>
+      <td>Maharashtra Cricket Association Stadium</td>
+      <td>A Nand Kishore</td>
+      <td>S Ravi</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2017</td>
+      <td>Rajkot</td>
+      <td>2017-04-07</td>
+      <td>Gujarat Lions</td>
+      <td>Kolkata Knight Riders</td>
+      <td>Kolkata Knight Riders</td>
+      <td>field</td>
+      <td>normal</td>
+      <td>0</td>
+      <td>Kolkata Knight Riders</td>
+      <td>0</td>
+      <td>10</td>
+      <td>CA Lynn</td>
+      <td>Saurashtra Cricket Association Stadium</td>
+      <td>Nitin Menon</td>
+      <td>CK Nandan</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2017</td>
+      <td>Indore</td>
+      <td>2017-04-08</td>
+      <td>Rising Pune Supergiant</td>
+      <td>Kings XI Punjab</td>
+      <td>Kings XI Punjab</td>
+      <td>field</td>
+      <td>normal</td>
+      <td>0</td>
+      <td>Kings XI Punjab</td>
+      <td>0</td>
+      <td>6</td>
+      <td>GJ Maxwell</td>
+      <td>Holkar Cricket Stadium</td>
+      <td>AK Chaudhary</td>
+      <td>C Shamshuddin</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2017</td>
+      <td>Bangalore</td>
+      <td>2017-04-08</td>
+      <td>Royal Challengers Bangalore</td>
+      <td>Delhi Daredevils</td>
+      <td>Royal Challengers Bangalore</td>
+      <td>bat</td>
+      <td>normal</td>
+      <td>0</td>
+      <td>Royal Challengers Bangalore</td>
+      <td>15</td>
+      <td>0</td>
+      <td>KM Jadhav</td>
+      <td>M Chinnaswamy Stadium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h1>Measuring center</h1>
+<p>First step often learnt in <a href="https://en.wikipedia.org/wiki/Descriptive_statistics">descriptive statistics</a> is to measure the center of given data. There are various ways to measure the center. We'll go through some of them.</p>
+<p>Let's get the data ready for our experiments. </p>
+<ul>
+<li><strong><code class="language-text">win_by_runs</code></strong> columns represents the margin in which a team has won against the opponent, if the team batting first has won.</li>
+<li>i.e. If <strong><code class="language-text">team1</code></strong> scores <strong>200</strong> runs and <strong><code class="language-text">team2</code></strong> scores <strong>150</strong> runs, <strong><code class="language-text">team1</code></strong> won the match by <strong>50 runs</strong> - If <strong><code class="language-text">team1</code></strong> bats first</li>
+</ul>
+<p>Hence, we have to exclude all instances of <strong><code class="language-text">win_by_wickets</code></strong> cases, i.e. <strong><code class="language-text">win_by_runs = 0</code></strong></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_data <span class="token operator">=</span> matches<span class="token punctuation">[</span>matches<span class="token punctuation">[</span><span class="token string">'win_by_runs'</span><span class="token punctuation">]</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>win_by_runs
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Number of rows = {len(win_by_runs_data)}'</span><span class="token punctuation">)</span>
+win_by_runs_data<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Number of rows = 315
+
+
+
+
+
+0     35
+4     15
+8     97
+13    17
+14    51
+Name: win_by_runs, dtype: int64</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>We'll discuss about 3 methods of measuring center - <strong><em>Mean</em></strong>, <strong><em>Median</em></strong> and <strong><em>Mode</em></strong></p>
+<h2>Mean</h2>
+<p><strong>Mean</strong> (usuallly refered to <strong>Arithmetic Mean</strong>, also called <strong>Average</strong>) is calculated as <strong>sum</strong> of all numbers in the dataset and dividing by the <strong>total</strong> number of values</p>
+<h3>Arithmetic Mean</h3>
+$$
+\begin{align}
+Arithmetic\,mean = {Sum\,of\,all\,numbers \over No.\,of\,values\,in\,the \,set}\,\,\,\,or\, 
+\end{align}
+$$
+$$
+\begin{align}
+\bar{x} = {\sum_{i=i}^{n} x_{i} \over n}
+\end{align}
+$$
+<p>Arithmetic mean of our data is calculated as,</p>
+<p><code class="language-text">mean = (35 + 15 + 97 + 17 + ...) / 315</code></p>
+<p>Let's do that in code.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_rows <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">)</span> <span class="token comment"># No. of values in the set (n)</span>
+win_by_runs_sum <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">)</span> <span class="token comment"># Sum of all numbers</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Sum of all numbers = {win_by_runs_sum}, No. of values in the set = {win_by_runs_rows}'</span><span class="token punctuation">)</span>
+
+win_by_runs_arithmetic_mean <span class="token operator">=</span> win_by_runs_sum <span class="token operator">/</span> win_by_runs_rows <span class="token comment"># Calculating arithmetic mean</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Arithmetic mean = {win_by_runs_arithmetic_mean}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Sum of all numbers = 9377, No. of values in the set = 315
+Arithmetic mean = 29.76825396825397</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>We can verify the number with the help of <code class="language-text">mean()</code> method in <code class="language-text">pandas</code></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_arithmetic_mean_verify <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Arithmetic mean (verify) = {win_by_runs_arithmetic_mean_verify}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Arithmetic mean (verify) = 29.76825396825397</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h3>Geometric Mean</h3>
+<p>Another type of mean is <strong>geometric mean</strong>. It is calculated as <strong>Nth root</strong> of <strong>product</strong> of all the numbers, where N is the total number of values in the dataset</p>
+$$
+\begin{align}
+Geometric\,mean = \sqrt[n]{product\,of\,all\,numbers}
+\end{align}
+$$
+$$
+\begin{align}
+\bar{x}_{geom} = \sqrt[n]{\prod_{i=1}^n x_i}
+\end{align}
+$$
+<p>Geometric mean of our data is calculated as,</p>
+<p><code class="language-text">geometric_mean = 315thRoot(35 x 15 x 97 x 17 x ...)</code></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_geo_mean <span class="token operator">=</span> stats<span class="token punctuation">.</span>mstats<span class="token punctuation">.</span>gmean<span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Geometric mean = {win_by_runs_geo_mean}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Geometric mean = 19.272304223934352</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Median</h2>
+<p><strong>Median</strong> is the middle value, when the data is sorted in ascending order. Half of the data points are smaller and half of data points are larger than the median.</p>
+<p>For example purpose, let's take first 10 entries of the data.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_10 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>win_by_runs_10<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>win_by_runs_10<span class="token punctuation">)</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">[35, 15, 97, 17, 51, 27, 5, 21, 15, 14]
+[5, 14, 15, 15, 17, 21, 27, 35, 51, 97]</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>To find median,</p>
+<ul>
+<li>Sort the data from smallest to largest (ascending order)</li>
+<li>If there are <strong>odd</strong> number of data points, median is the <em>middle</em> data point.</li>
+<li>If there are <strong>even</strong> number of data points, median is the <em>average of two</em> middle data points</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">[5, 14, 15, 15, 17, 21, 27, 35, 51, 97]
+                ^^  ^^  
+           (middle numbers)
+                                  
+Median = (17 + 21)/2 = 19</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Let's verify,</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_10_median <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">.</span>median<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Median (first 10) = {win_by_runs_10_median}'</span><span class="token punctuation">)</span>
+
+win_by_runs_median <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>median<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Median = {win_by_runs_median}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Median (first 10) = 19.0
+Median = 22.0</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<h2>Mode</h2>
+<p><strong>Mode</strong> is the number occurring most often in the dataset.</p>
+<ul>
+<li>It is only meaningful if we have many repeated values in our dataset</li>
+<li>If no value is repeated, there is <strong>no mode</strong></li>
+<li>A dataset can have <strong><em>one mode</em></strong>, <strong><em>multiple modes</em></strong> or <strong><em>no mode</em></strong>.</li>
+</ul>
+<p>Let's try to retrieve mode for our dataset.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token comment"># Retrieve frequency (sorted, descending order)</span>
+win_by_runs_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">4     11
+14    11
+10    10
+15     9
+13     9
+Name: win_by_runs, dtype: int64</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>As we can observe, <code class="language-text">[4, 14]</code> occurs <strong>11 times</strong> in the dataset. </p>
+<p>Hence, <strong>Mode = [4, 14]</strong>,</p>
+<p>We can verify using <code class="language-text">pandas.DataFrame.mode</code> method</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_data_mode <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>mode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Mode = {list(win_by_runs_data_mode)}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Mode = [4, 14]</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h1>Measuring spread (variability)</h1>
+<p>By just measuring the center of the data, one wouldn't get much idea about the dataset. There are various ways of measuring how the data is spread.</p>
+<h2>Range</h2>
+<p><strong>Range</strong> is the simplest form of measuring variability. It is the difference between largest number and smallest number.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_max <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+win_by_runs_min <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+win_by_runs_range <span class="token operator">=</span> win_by_runs_max <span class="token operator">-</span> win_by_runs_min
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Largest = {win_by_runs_max}, Smallest = {win_by_runs_min}, Range = {win_by_runs_range}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Largest = 146, Smallest = 1, Range = 145</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Interquartile Range (IQR)</h2>
+<p><strong>Interquartile range</strong> or <strong>IQR</strong> is the amount spread in middle 50% of the dataset or the distance between <em>first Quartile</em> (Q₁) and <em>third Quartile</em> (Q₃)</p>
+<ul>
+<li>First Quartile (Q₁) = Median of data points to left of the median in ordered list (25th percentile)</li>
+<li>Second Quartile (Q₂) = Median of data (50th percentile)</li>
+<li>Third Quartile (Q₃) = Median of data points to right of the median in ordered list (75th percentile)</li>
+<li>IQR = Q₃ - Q₁</li>
+</ul>
+<p><img src="/iqr-40349415a5dbb6e825eec70bf1849711.svg" alt="Interquartile range"></p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">[41, 48, 58, 60, 60, 67, 69, 71, 75, 78, 81, 83, 89, 89, 91, 92, 94, 94, 96, 98]
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             first half                              second half
+        median = (60 + 67) / 2 = 63.5        median = (91 + 92) / 2 = 91.5
+
+Q₁ = 63.5
+Q₃ = 91.5
+IQR = Q₃ - Q₁ = 91.5 - 63.5 = 28</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Let's calculate IQR for <code class="language-text">win_by_runs</code></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_25_perc <span class="token operator">=</span> stats<span class="token punctuation">.</span>scoreatpercentile<span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span>
+win_by_runs_75_perc <span class="token operator">=</span> stats<span class="token punctuation">.</span>scoreatpercentile<span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">)</span>
+
+win_by_runs_iqr <span class="token operator">=</span> stats<span class="token punctuation">.</span>iqr<span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Q1 (25th percentile) = {win_by_runs_25_perc}'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Q3 (75th percentile) = {win_by_runs_75_perc}'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'IQR = Q3 - Q1 = {win_by_runs_75_perc} - {win_by_runs_25_perc} = {win_by_runs_iqr}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Q1 (25th percentile) = 11.0
+Q3 (75th percentile) = 38.0
+IQR = Q3 - Q1 = 38.0 - 11.0 = 27.0
+
+
+/opt/conda/lib/python3.6/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h3>Percentiles</h3>
+<p><strong>Percentile</strong> is a number where certain percentage of numbers fall below that number.</p>
+<p>Taking the above example,</p>
+<ul>
+<li>25th percentile = 11 → 25% of the matches are won by less thant 11 runs.</li>
+<li>75th percentile = 38 → 75% of the matches are won by less than 38 runs.</li>
+</ul>
+<p>Percentile can be calculated using <code class="language-text">scipy.stats.scoreatpercentile</code></p>
+<p>To calculate 95th percentile,</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_95_perc <span class="token operator">=</span> stats<span class="token punctuation">.</span>scoreatpercentile<span class="token punctuation">(</span>win_by_runs_data<span class="token punctuation">,</span> <span class="token number">95</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'95th percentile = {win_by_runs_95_perc}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">95th percentile = 86.0
+
+
+/opt/conda/lib/python3.6/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2>Variance and Standard deviation</h2>
+<p>Standard deviation and variance measures the spread of a dataset. If the data is spread out largely, standard deviation (and variance) is greater. </p>
+<p>In other terms, </p>
+<ul>
+<li>if more data points are closer to the mean, standard deviation is less</li>
+<li>if the data points are further from the mean, standard deviation is more</li>
+</ul>
+<p>Formula for variance for <strong>population</strong> is given as,</p>
+$$
+\begin{align}
+Variance\,=\sigma^2 = {\sum_{i=i}^{n}{(x_i - \mu)}^2 \over n}
+\end{align}
+$$
+<p>where, $\mu$ is the <strong>mean</strong> of the dataset</p>
+<p>Standard deviation is just the square root of variance</p>
+$$
+\begin{align}
+Standard\,deviation\,=\sigma = \sqrt{\sum_{i=i}^{n}{(x_i - \mu)}^2 \over n}
+\end{align}
+$$
+<blockquote>
+<p><strong>Note</strong>:</p>
+<p>For <strong>Sample</strong>, we use <code class="language-text">n - 1</code> instead of <code class="language-text">n</code>,  $\bar{x}$ - mean of sample</p>
+</blockquote>
+$$
+\begin{align}
+Standard\,deviation\,=S_{sample} = \sqrt{\sum_{i=i}^{n}{(x_i - \bar{x})}^2 \over n - > 1}
+\end{align}
+$$
+<p>Let's take <code class="language-text">win_by_wickets</code> dataset.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_data <span class="token operator">=</span> matches<span class="token punctuation">[</span>matches<span class="token punctuation">.</span>win_by_wickets <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>win_by_wickets
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Number of rows = {len(win_by_wickets_data)}'</span><span class="token punctuation">)</span>
+win_by_wickets_data<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Number of rows = 371
+
+
+
+
+
+1     7
+2    10
+3     6
+5     9
+6     4
+Name: win_by_wickets, dtype: int64</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Let's calculate the standard deviation by formula</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python"><span class="token comment"># Step 1: calculate mean(μ)</span>
+win_by_wickets_mean <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Mean = {win_by_wickets_mean}'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Step 2: calculate numerator part - sum of (x - mean)</span>
+win_by_wickets_var_numerator <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span>x <span class="token operator">-</span> win_by_wickets_mean<span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> win_by_wickets_data<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Step 3: calculate variane</span>
+win_by_wickets_variance <span class="token operator">=</span> win_by_wickets_var_numerator <span class="token operator">/</span> <span class="token builtin">len</span><span class="token punctuation">(</span>win_by_wickets_data<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Variance = {win_by_wickets_variance}'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Step 4: calculate standard deviation</span>
+win_by_wickets_standard_deviation <span class="token operator">=</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>win_by_wickets_variance<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Standard deviation = {win_by_wickets_standard_deviation}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Mean = 6.283018867924528
+Variance = 3.3673396734984533
+Standard deviation = 1.835031245918841</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Let's verify the result using <code class="language-text">pandas.DataFrame.std</code> (Note: We're passing <code class="language-text">ddof = 0</code> for population)</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_standard_deviation_verify <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>std<span class="token punctuation">(</span>ddof <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Standard deviation = {win_by_wickets_standard_deviation_verify}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Standard deviation = 1.835031245918841</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>i.e. matches are won by an average of 6.28 wickets with standard deviation of 1.83 (spread = 6.28 $\pm$ 1.83)</p>
+<h3>Comparison with IQR</h3>
+<p>IQR is calculated with respect to <strong>median</strong>, Standard deviation is calculated with respect to <strong>mean</strong>.</p>
+<p>Let's compare those for <code class="language-text">win_by_runs</code> data</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_std <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>std<span class="token punctuation">(</span>ddof <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'| Mean               = {win_by_runs_arithmetic_mean} | Median  = {win_by_runs_median} |'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'| Standard deviation = {win_by_runs_std} | IQR     = {win_by_runs_iqr} |'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">| Mean               = 29.76825396825397 | Median  = 22.0 |
+| Standard deviation = 27.28719000229254 | IQR     = 27.0 |</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>For this particular data, standard deviation and IQR are pretty close by, although it won't be the scenario always.</p>
+<h2>Distribution graph</h2>
+<p>Let's plot the frequency distribution graph for <code class="language-text">win_by_wickets</code> data since we can have values from 1 - 10.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_wickets_dist <span class="token operator">=</span> win_by_wickets_data<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span>sort<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+plt <span class="token operator">=</span> win_by_wickets_dist<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>color<span class="token operator">=</span><span class="token string">'lightblue'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axvline<span class="token punctuation">(</span>x <span class="token operator">=</span> win_by_wickets_mean <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'blue'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axvline<span class="token punctuation">(</span>x <span class="token operator">=</span> win_by_wickets_mean <span class="token operator">-</span> win_by_wickets_standard_deviation <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">,</span> linestyle<span class="token operator">=</span><span class="token string">'dashed'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>axvline<span class="token punctuation">(</span>x <span class="token operator">=</span> win_by_wickets_mean <span class="token operator">+</span> win_by_wickets_standard_deviation <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">,</span> linestyle<span class="token operator">=</span><span class="token string">'dashed'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">&lt;matplotlib.lines.Line2D at 0x7fdd0be0e828&gt;</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/204e07e39179ac459adc40a7b6eb76e8/05790/output_37_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 372px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 68.27956989247312%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAACPElEQVQ4y62SW4/SUBCA0X/lr/Bf+Gz6oC8bfdGoibuw66P/wEdN2BiVXSNaidwvSUvplRZ6gZalUAqnPeO0XAIR4z44yZwzZy5f5mQmk0Hhef6eYRgnlmU9NE2T2altMybPM0PDYGzHYoTekGm3TSaYOIxpYYzjGXMwQNtisPaRrusPEl5GUZQs/E0Wi51Ztyn0RwDe1hEEB6lhGN6kQFVVn29TUMmBui6hhKT2R25M6mJICppNwngdgzhOYsukGNOkFChJ0qsNcEX3BYCC59KqPqLDYEGvBY/WewtaNBy6jDHmupRGUZIXp8WrlZYCZVl+uQeEnSaekQPfZQu0WQAIhFpvAUXdgSCiEBhDgCiCfwIT2d7gjoFVbOjvAdnBCKxgBT8bAqJiuFWHeOAjAbrAqkeA8xX8aImYl7IOgTjlF/vAeNNdw/FBFFSo4Gg1/0/gr6YAI/RzY/92wJo9hV5XgeoRoInASksAzfWh2B+nwOUWiFM++HIU083eTUGUdMApHwWWOxLokxmwhhtv1mYN1DTt2f4eyt6cSO6MtEY+EQSV4JeJ6gfkWnAJAgkCiTlfknKrR/qeTxCY7uE0COU1sK+f7m/8IAJQMUXHRh3Tg54fwQ36qzaA6AB0gghCfAuKBVO8u9hGEi8b40kK/PCpcP+qyb2ti+rrfLVzznLi2VWTzxXaQo5ly9l8qXFRk9XTd19bb76U1LP31VauKWnZ/OdvFxVOzCY1pa5yflntPM08PnlyN/P/5M5vhBqL6ko6FDwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/204e07e39179ac459adc40a7b6eb76e8/05790/output_37_1.png"
+        srcset="/static/204e07e39179ac459adc40a7b6eb76e8/faa9a/output_37_1.png 148w,
+/static/204e07e39179ac459adc40a7b6eb76e8/3c5d2/output_37_1.png 295w,
+/static/204e07e39179ac459adc40a7b6eb76e8/05790/output_37_1.png 372w"
+        sizes="(max-width: 372px) 100vw, 372px"
+      />
+  </span>
+  </a></p>
+<ul>
+<li>Blue line = Mean</li>
+<li>Red line = Mean $\pm$ std.dev</li>
+</ul>
+<h2>Mean Absolute Deviation (MAD)</h2>
+<p><strong>Mena absolute deviation</strong> is the average distance between mean and each data point.</p>
+$$
+\begin{align}
+Mean\,absolute\,deviation\,(MAD) = {\sum{\lvert x_i - \bar{x} \rvert} \over n}
+\end{align}
+$$
+<p>Let's calculate mean absolute deviation for <code class="language-text">win_by_runs</code></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_mad <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>mad<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'Mean absolute deviation = {win_by_runs_mad}'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Mean absolute deviation = 20.129644746787577</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h2>Box and whisker plots</h2>
+<p><strong>Box and whisker plots</strong> (or box plots) represents five-number summary of the dataset. The five-number values are,</p>
+<ol>
+<li>Minimum</li>
+<li>First quartile (25th percentile)</li>
+<li>Median (50th percentile)</li>
+<li>Third quartile (75th percentile)</li>
+<li>Maximum</li>
+</ol>
+<p>The following is a representation of box-and-whisker plot</p>
+<p><img src="/box-whisker-plot-76f6d2e5ee3c0ac6dd0ad9d28f3992d7.svg" alt="Box-whisker plot"></p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">plt <span class="token operator">=</span> win_by_runs_data<span class="token punctuation">.</span>to_frame<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>whis<span class="token operator">=</span><span class="token string">'range'</span><span class="token punctuation">,</span> vert<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_xlim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">'Win by runs'</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Text(0.5,0,&#39;Win by runs&#39;)</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/7dc9ab5b521a2b78e1177d87cd0b1b80/a0b85/output_42_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 427px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.29508196721311%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAABk0lEQVQoz6WSy04CMRRAh4GQaISdcYk7Fiz4CrdEiQv/wEdijN+HCIImuuILYIYEBgiRYco4zz68t3RgYqKS0KQ57e3t6VPToHiel0WORqNHsUcxDOMKPVoQBFI4mUyucYBS6gMiYPQXGWMR5xyJ+WI4HJ5LITSk0LKsWxzgjFIETBQwQfxDzKNKWJdCaGeQ0+n0BgeI59MwZlLIGBdxDOTIeEu2FsLuNkLTNKWwUCqdngBzzXb3weNCWPaczknAiReKlR/BAoFwg1g4X2tiHGMOISjlYRhK4WAwkMJcrVY7xIZpGHc48Om61I8YZ2x7NJEiU0fGne50ZLZO4PEud5g68kYI30U+yng8lkJYOcTHBlLcwG/EAneICNUdXkgh3EFW7fB+n38Iv+RSUyId2ev16o7jvEP/hRDyDP/ydblctmazWdd13SdgB+JNjNu23QLB22KxaEO/A3kfjUbjTEsKLIDIqm5GUU/xAOox1Dw+pIrnFZN5xbQsaevYTzHT7/f1crlcrFQqhWq1epTEfxLnfwP3rMmkezyItQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/7dc9ab5b521a2b78e1177d87cd0b1b80/a0b85/output_42_1.png"
+        srcset="/static/7dc9ab5b521a2b78e1177d87cd0b1b80/da5e4/output_42_1.png 148w,
+/static/7dc9ab5b521a2b78e1177d87cd0b1b80/f8e99/output_42_1.png 295w,
+/static/7dc9ab5b521a2b78e1177d87cd0b1b80/a0b85/output_42_1.png 427w"
+        sizes="(max-width: 427px) 100vw, 427px"
+      />
+  </span>
+  </a></p>
+<p>There's one problem with this graph. We have outliers to the right of the graphs. Instead of showing <strong>min</strong> and <strong>max</strong> as the two ends of the whisker, we calculate the following.</p>
+<ul>
+<li>Lower fence = $Q_1 - 1.5 \times IQR$,</li>
+<li>Upper fence = $Q_3 + 1.5 \times IQR$</li>
+</ul>
+<p>Note the <code class="language-text">whis</code> parameter in the above code set to <code class="language-text">range</code>. By default <code class="language-text">whis</code> is set to <code class="language-text">1.5</code>.</p>
+<div class="gatsby-highlight" data-language="python"><pre style="counter-reset: linenumber NaN" class="language-python line-numbers"><code class="language-python">win_by_runs_data<span class="token punctuation">.</span>to_frame<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>vert<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fdd0babd320&gt;</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/ed156d45c68871ed9d80e5970fbfe782/97224/output_44_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 421px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 59.857482185273156%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAB6ElEQVQoz6VSvW4aQRAmduTCwekSS1Es0YJQBAUFBe8QAVWInAJ3IPEENpWVJq8QJUXavEoMJyGExG9SQICDu+M4zrt7O5kZ30UhdueRVt/Mjeabb2YuFkPr9/tPCNvt9pv5fH5tmuYVYhOxSbhcLpuLxeIe/pO/xPdxPB6/JZ4YfjwkHA6HF/AIW61W35kQOzEhdngX5nZKKaEBBCHGIggCobXeQwjzGHtUZNv2ZyZstVoR4fuQUAVKaXaUAizYQyRjJJNS0ndJvmVZX5kQfcbJZFIBbhsod+frnVAg7gr+EkYW+URIECpkwngikXiJ+PTm5keVSGaWp37bpl46OzAdD1xfguPdguV60DYM6Ha7MBgMYLPZgO/7sF6vJaqD2WzGhEf5fD5OTq/X+0CdNr5UK9fVtifAF4LksEJ6VOg4DpNRTAqFEDI8ysMj362Odqjv7fD/kcNd7o0cMwyDjzIajfgomlcjAywKIsTCgIxiMoqjPNpteJQvTIhSD0OF54/5D1Hht2jUA8JOp1PELovtdjvERf90XXdMiPt6CH9RHsVQPMA6ezqdfmLCQqEQ4VGxWHxerVaf5XK5F41G4zibzZ7W6/XjTCZzWqvVOK5UKvFkMvm6XC6fpNPpV6VS6SSVSp2hyIM/FBLtj/5JXKgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <img
+        class="gatsby-resp-image-image"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+        alt="png"
+        title=""
+        src="/static/ed156d45c68871ed9d80e5970fbfe782/97224/output_44_1.png"
+        srcset="/static/ed156d45c68871ed9d80e5970fbfe782/5c6da/output_44_1.png 148w,
+/static/ed156d45c68871ed9d80e5970fbfe782/8f377/output_44_1.png 295w,
+/static/ed156d45c68871ed9d80e5970fbfe782/97224/output_44_1.png 421w"
+        sizes="(max-width: 421px) 100vw, 421px"
+      />
+  </span>
+  </a></p></div></div><br/><br/><br/></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-notebook-js","jsonName":"stats-kaggle-statistics-1-summarizing-quantitative-data-c37","path":"/stats-kaggle/statistics-1-summarizing-quantitative-data/"};window.dataPath="212/path---stats-kaggle-statistics-1-summarizing-quantitative-data-c-37-4f7-8iA5cECqJj6HvwqTGFAbqel2xOw";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-09973328ae794b6d3ad9.js"],"component---src-templates-notebook-js":["/component---src-templates-notebook-js-83603a12744ae7a224bd.js"],"component---src-pages-index-js":["/component---src-pages-index-js-f2b747c43159e2c793e9.js"],"pages-manifest":["/pages-manifest-5c310ab7efb115e733ad.js"]};/*]]>*/</script><script src="/component---src-templates-notebook-js-83603a12744ae7a224bd.js" async=""></script><script src="/1-ad5f9a487a8aed54e0d3.js" async=""></script><script src="/styles-c169e290e1298d872141.js" async=""></script><script src="/app-09973328ae794b6d3ad9.js" async=""></script><script src="/webpack-runtime-99ac9efd09bf85fe116f.js" async=""></script></body></html>
