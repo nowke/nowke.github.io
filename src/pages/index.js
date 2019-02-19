@@ -62,6 +62,18 @@ export default () => (
             </Description>
           </ProjectItem>
         </Col>
+        <Col lg={4} md={6} sm={6} xs={12}>
+          <ProjectItem>
+            <StyledHeading
+              link="/stats-kaggle/"
+              title="Basic Statistics using IPL Data"
+            />
+            <Description>
+              Learn Quantitative Data, distributions, bivariate data using
+              Kaggle's IPL Cricket data (2008-2018)
+            </Description>
+          </ProjectItem>
+        </Col>
       </Row>
     </Grid>
     <br />
