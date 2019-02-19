@@ -72,7 +72,7 @@ export default () => (
           <ProjectItem>
             <StyledHeading
               link="/realtime-monitoring"
-              title="Real-time monitoring dashboard"
+              title="Real-time dashboard"
             />
             <Description>
               A lightweight scalable real-time monitoring dashboard using
