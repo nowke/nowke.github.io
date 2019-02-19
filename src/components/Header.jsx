@@ -1,52 +1,101 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 import Github from "src/assets/images/github.svg";
 import LinkedIn from "src/assets/images/linkedin.svg";
 import Twitter from "src/assets/images/twitter.svg";
 
-const Header = styled.header`
-  height: 6em;
-  background: #ffffff;
-  color: #000000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+const Navbar = styled.nav`
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  background-color: #ffffff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
 `;
 
-const H1 = styled.h1`
-  font-size: 2.45rem;
+const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+`;
+
+const TitleHeading = styled.h1`
+  font-size: 1.9rem;
   margin: 0;
   padding: 0.1em 0;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 `;
 
+const Title = ({ children }) => (
+  <Link to="/" style={{ textDecoration: 'none', color: 'unset' }}>
+    <TitleHeading>{children}</TitleHeading>
+  </Link>
+);
+
 const SocialContainer = styled.div`
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: auto;
   display: flex;
-  width: 100%;
-  justify-content: center;
+`;
+
+const NavbarItemContainer = styled.ul`
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: auto !important;
+  flex-direction: row;
+`;
+
+const NavbarItem = styled.li`
+  font-size: 0.9rem;
 `;
 
 const Social = styled.img`
   width: 1.4em;
   height: 1.6em;
-  padding: 0 0.4em;
+  padding: 0 0.7em;
 `;
 
 const SocialLink = ({ src, link }) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
-    <Social src={src} />
-  </a>
+  <NavbarItem>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <Social src={src} />
+    </a>
+  </NavbarItem>
 );
 
 export default () => {
   return (
-    <Header>
-      <H1>~ nowke ~</H1>
-      <SocialContainer>
-        <SocialLink src={Github} link="https://github.com/nowke" />
-        <SocialLink src={LinkedIn} link="https://www.linkedin.com/in/nowke/" />
-        <SocialLink src={Twitter} link="https://twitter.com/inowke" />
-      </SocialContainer>
-    </Header>
+    <Navbar>
+      <Container>
+        <Title>nowke</Title>
+        <SocialContainer>
+          <NavbarItemContainer>
+            <SocialLink src={Github} link="https://github.com/nowke" />
+            <SocialLink
+              src={LinkedIn}
+              link="https://www.linkedin.com/in/nowke/"
+            />
+            <SocialLink src={Twitter} link="https://twitter.com/inowke" />
+          </NavbarItemContainer>
+        </SocialContainer>
+      </Container>
+    </Navbar>
   );
 };

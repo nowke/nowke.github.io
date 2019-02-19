@@ -9,8 +9,11 @@ import "src/assets/styles/github-markdown.css";
 const BodyContainer = styled.div`
   margin: 0 auto;
   width: 80%;
-  max-width: 80rem;
+  max-width: 1140px;
+  min-height: 60vh;
+  margin-top: 70px;
 `;
+
 /* eslint-disable no-restricted-globals */
 export default class Layout extends React.Component {
   componentDidMount() {
