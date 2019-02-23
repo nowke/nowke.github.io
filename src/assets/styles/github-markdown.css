@@ -38,6 +38,13 @@
 
 .markdown-body pre {
   overflow: auto;
+  white-space: pre;
+  padding: 1.25rem;
+  margin: 40px 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(216, 216, 216);
+  border-image: initial;
 }
 
 .markdown-body code,

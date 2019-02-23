@@ -35,7 +35,7 @@ const StyledHeading = styled(ItemHeading)`
   margin: 0;
 
   :hover {
-    color: #da2d2d;
+    color: #0076ff;
   }
 `;
 
@@ -83,7 +83,7 @@ export default () => (
         <Col lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading
-              link="/realtime-monitoring"
+              link="/realtime-dashboard"
               title="Real-time dashboard"
             />
             <Description>
