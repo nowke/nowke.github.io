@@ -6,25 +6,6 @@ permalink: /stats-kaggle/statistics-1-summarizing-quantitative-data/
 
 Originally published in [Kaggle](https://www.kaggle.com/nowke9/statistics-1-summarizing-quantitative-data)
 
-# Table of contents
-
-* Introduction
-* Measuring center
-    * Mean
-        * Arithmetic Mean
-        * Geometric Mean
-    * Median
-    * Mode
-* Measuring spread (variability)
-    * Range
-    * Interquartile Range (IQR)
-        * Percentiles
-    * Variance and Standard deviation
-        * Comparison with IQR
-    * Distribution graph
-    * Mean Absolute Deviation (MAD)
-    * Box and whisker plots
-
 # Introduction
 **Quantitative data** is information that can be measured in real numbers. Examples include,
 * Height of a person
