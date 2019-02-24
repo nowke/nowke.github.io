@@ -98,7 +98,7 @@ const Social = styled.img`
 const SocialLink = ({ src, link }) => (
   <NavbarItem>
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <Social src={src} />
+      <Social src={src} width="1.4em" height="1.6em" />
     </a>
   </NavbarItem>
 );
