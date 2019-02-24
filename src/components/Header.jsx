@@ -53,6 +53,7 @@ const Container = styled.div`
 `;
 
 const TitleHeading = styled.h1`
+  font-family: "Noto Serif", serif;
   font-size: 1.9rem;
   margin: 0;
   padding: 0.1em 0;

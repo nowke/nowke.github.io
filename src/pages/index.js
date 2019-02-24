@@ -11,6 +11,7 @@ const SubHeading = styled.h2`
   text-align: left;
   font-size: 1.2em;
   font-weight: 700;
+  margin: 0;
 `;
 
 const ProjectItem = styled.div`
@@ -48,12 +49,16 @@ const Description = styled.p`
   line-height: 1.5;
 `;
 
+const StyledCol = styled(Col)`
+  margin: 8px 0;
+`;
+
 export default () => (
   <Layout>
     <SubHeading>Notebooks</SubHeading>
     <Grid style={{ padding: 0, width: "unset" }}>
       <Row>
-        <Col lg={4} md={6} sm={6} xs={12}>
+        <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading link="/stats/" title="Probability and Statistics" />
             <Description>
@@ -61,8 +66,8 @@ export default () => (
               Intervals, Covariance and correlation
             </Description>
           </ProjectItem>
-        </Col>
-        <Col lg={4} md={6} sm={6} xs={12}>
+        </StyledCol>
+        <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading
               link="/stats-kaggle/"
@@ -73,14 +78,14 @@ export default () => (
               Kaggle's IPL Cricket data (2008-2018)
             </Description>
           </ProjectItem>
-        </Col>
+        </StyledCol>
       </Row>
     </Grid>
     <br />
     <SubHeading>Projects</SubHeading>
     <Grid style={{ padding: 0, width: "unset" }}>
       <Row>
-        <Col lg={4} md={6} sm={6} xs={12}>
+        <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading
               link="/realtime-dashboard"
@@ -91,7 +96,7 @@ export default () => (
               GraphQL subscription and Redis PubSub
             </Description>
           </ProjectItem>
-        </Col>
+        </StyledCol>
       </Row>
     </Grid>
   </Layout>

@@ -74,7 +74,11 @@ export default class Layout extends React.Component {
         <Helmet htmlAttributes={{ lang: "en" }}>
           <title>nowke | Navaneesh Kumar</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700"
+            href="https://fonts.googleapis.com/css?family=Noto+Serif:400"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
             rel="stylesheet"
           />
           <script
