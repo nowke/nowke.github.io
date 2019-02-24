@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Binomial Distribution
+description: Binomial Distribution
 permalink: /stats/binomial-distribution
 ---
 

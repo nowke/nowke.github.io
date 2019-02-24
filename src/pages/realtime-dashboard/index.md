@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Real-time Dashboard
+description: A lightweight scalable real-time dashboard using React, GraphQL subscriptions and Redis PubSub
 permalink: /realtime-dashboard/
 ---
 

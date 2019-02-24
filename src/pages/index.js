@@ -92,8 +92,8 @@ export default () => (
               title="Real-time dashboard"
             />
             <Description>
-              A lightweight scalable real-time monitoring dashboard using
-              GraphQL subscription and Redis PubSub
+              A lightweight scalable real-time dashboard using React, GraphQL
+              subscriptions and Redis PubSub
             </Description>
           </ProjectItem>
         </StyledCol>

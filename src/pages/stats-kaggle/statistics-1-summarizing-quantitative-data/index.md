@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Statistics 1. Summarizing Quantitative data
+description: Summarizing Quantitative data
 permalink: /stats-kaggle/statistics-1-summarizing-quantitative-data/
 ---
 

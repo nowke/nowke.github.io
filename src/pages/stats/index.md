@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Statistics and Probability
+description: Statistics and Probability
 permalink: /stats/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Covariance and Correlation
+description: Covariance and Correlation
 permalink: /stats/covariance-correlation
 ---
 

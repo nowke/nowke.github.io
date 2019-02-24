@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Statistics 2. Distributions
+description: Distributions
 permalink: /stats-kaggle/statistics-2-distributions/
 ---
 

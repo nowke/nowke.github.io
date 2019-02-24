@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Basic Statistics using IPL Data
+description: Basic Statistics using IPL Data
 permalink: /stats-kaggle/
 ---
 

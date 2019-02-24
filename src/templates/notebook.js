@@ -10,6 +10,7 @@ export default ({ data }) => {
     <Layout>
       <Helmet>
         <title>{post.frontmatter.title} | nowke</title>
+        <meta name="description" content={post.frontmatter.description || ""} />
       </Helmet>
       <br />
       <div className="markdown-body">
@@ -29,6 +30,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

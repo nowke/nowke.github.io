@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Random Variables
+description: Random Variables
 permalink: /stats/random-variables
 ---
 

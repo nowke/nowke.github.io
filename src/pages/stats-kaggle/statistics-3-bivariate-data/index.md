@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Statistics 3. Bivariate data
+description: Bivariate data
 permalink: /stats-kaggle/statistics-3-bivariate-data/
 ---
 

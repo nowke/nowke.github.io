@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Confidence Intervals
+description: Confidence Intervals
 permalink: /stats/confidence-intervals
 ---
 

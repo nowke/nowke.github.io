@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Descriptive Statistics
+description: Descriptive Statistics
 permalink: /stats/descriptive-stats
 ---
 

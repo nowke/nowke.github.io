@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Normal Distributions
+description: Descriptive Statistics
 permalink: /stats/normal-distributions
 ---
 

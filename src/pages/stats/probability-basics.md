@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Probability Basics
+description: Probability Basics
 permalink: /stats/probability-basics
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Population and Sample
+description: Population and Sample
 permalink: /stats/population-and-sample
 ---
 
