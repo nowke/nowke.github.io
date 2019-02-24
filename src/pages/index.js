@@ -60,7 +60,7 @@ export default () => (
       <Row>
         <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
-            <StyledHeading link="/stats/" title="Probability and Statistics" />
+            <StyledHeading link="/stats/" title="Statistics and Probability" />
             <Description>
               Basics of probability, descriptive statistics, Distributions,
               Intervals, Covariance and correlation
