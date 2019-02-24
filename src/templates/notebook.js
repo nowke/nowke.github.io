@@ -11,6 +11,8 @@ export default ({ data }) => {
       <Helmet>
         <title>{post.frontmatter.title} | nowke</title>
         <meta name="description" content={post.frontmatter.description || ""} />
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta property="og:description" content={post.frontmatter.description || ""} />
       </Helmet>
       <br />
       <div className="markdown-body">
