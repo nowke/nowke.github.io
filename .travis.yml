@@ -11,3 +11,7 @@ install:
 
 script:
   - yarn build
+
+deploy:
+  provider: script
+  script: yarn deploy
