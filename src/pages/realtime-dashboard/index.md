@@ -436,7 +436,7 @@ Refer the file [CpuUsage.js](https://github.com/nowke/realtime-dashboard-demo/bl
 
 ### Worker
 
-Real events can be mocked using a simple scheduler script by calling mutation for the 4 panels at regular intervals. The package [node-schedule](https://www.npmjs.com/package/node-schedule) can be used.
+Real events can be mocked using a simple scheduler script by calling mutation for the 4 panels at regular intervals. The package [node-schedule](https://www.npmjs.com/package/node-schedule) can be used for creating asynchronous schedulers.
 
 Install the dependencies
 
@@ -530,7 +530,7 @@ If nginx is used, websocket requests can be routed by changing the configuration
 
 ### Architecture diagram
 
-The following diagram represents where 4 clients are connected to 4 servers via load-balancer
+The following diagram represents a configuration where 4 clients are connected to 4 servers via load-balancer
 
 ![Architecture diagram](arch-diagram.svg)
 
