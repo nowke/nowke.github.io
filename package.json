@@ -1,7 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "nowke.github.io",
+  "description": "Site nowke.github.io - Navaneesh Kumar",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -24,10 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/nowke/nowke.github.io"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
