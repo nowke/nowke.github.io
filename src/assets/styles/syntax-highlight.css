@@ -135,10 +135,28 @@ pre.dark[class*="language-"] {
   color: #50e3c2;
 }
 
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background-color: inherit;
 }
 
 pre[class*="language-"] {
   border-radius: unset;
+}
+
+p code[class*="language-"],
+ol code[class*="language-"] {
+  font-size: 1em;
+  color: rgb(212, 0, 255);
+  white-space: pre-wrap;
+}
+
+p code[class*="language-"]::before,
+ol code[class*="language-"]::before {
+  content: "`";
+}
+
+p code[class*="language-"]::after,
+ol code[class*="language-"]::after {
+  content: "`";
 }

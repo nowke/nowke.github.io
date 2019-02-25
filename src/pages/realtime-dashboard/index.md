@@ -5,21 +5,24 @@ description: A lightweight scalable real-time dashboard using React, GraphQL sub
 permalink: /realtime-dashboard/
 ---
 
-In this post, we will be creating a simple scalable dashboard that updates in real-time using [React](ll), [GraphQL Subscriptions](ll) and [Redis PubSub](ll). Real-time dashboards can be used to monitor your **infrastructure** (servers, network, services), **application traffic** (transaction volume, number of users), **alerts** (application health, critical issues, downtimes) etc. Almost always, dashboards are backed up with one or more datasources.
+In this post, we will be creating a simple scalable dashboard that updates in real-time using [React](ll), [GraphQL Subscriptions](ll), and [Redis PubSub](ll). Real-time dashboards are used for monitoring **infrastructure** (servers, network, services), **application traffic** (transaction volume, number of users), **alerts** (application health, notify of critical issues, downtimes) etc. In most cases, dashboards are driven by one or more datasources.
 
-There are many open-source applications that can be used to create dashboards. For example, **[Kibana](ll)** can be used to visualize application logs integrated with [ELK Stack](ll). **[Grafana](ll)** can be used to create a variety of visualizations on top of time series databases such as [Prometheus](ll), [Graphite](ll) and [OpenTSDB](ll). But, as of today, they support [pull-based model](https://en.wikipedia.org/wiki/Pull_technology). That is, when a user opens the browser, application makes the queries and result is rendered. It is the most widely used model as opposed to a [Push model](https://en.wikipedia.org/wiki/Push_technology). 
+Developers utilize a few open-source applications to create rich and useful dashboards. For example, **[Kibana](ll)** is used for visualizing application logs integrated with [ELK Stack](ll). **[Grafana](ll)** provides the platform for building variety of visualizations on top of time series databases such as [Prometheus](ll), [Graphite](ll), and [OpenTSDB](ll). But, as of today, they support only [pull-based model](https://en.wikipedia.org/wiki/Pull_technology). That is, when a user opens the browser, the application queries the datasource to render the dashboard. It is the most widely used model as compared to a [Push model](https://en.wikipedia.org/wiki/Push_technology). 
 
 ## When push-model can be used?
 
-Assume you have a dashboard containing ***20 panels***, querying data from multiple datasources at the backend in real-time. User has set a refresh rate of ***5 seconds***. If, on an average ***100 users*** open the dashboard at any time - that is ***20 x 100 = 2000 requests*** every 5 seconds! This is manageable if you have good infrastructure for your underlying time-series database. Multiple Heavy queries can pile-up the memory. This problem can be solved either by introducing some intelligent caching, or a simple push-model using [WebSockets](ll). It is useful (and simple), for the situation where multiple users are querying for the same data, at same or slightly-different time. 
+Assume you have a dashboard consisting of ***20 panels***; querying data from multiple datasources in real-time. The User has set a refresh rate of ***5 seconds***. If, on an average ***100 users*** open the dashboard at any given time results in ***20 x 100 = 2000 requests*** every 5 seconds! This is manageable if you have good infrastructure for your underlying time-series database. Otherwise multiple heavy queries can pile-up the memory causing delay in retrieving result. This problem can be solved either by introducing an intelligent caching solution, or a simple push-model using [WebSockets](ll). It is useful (and simple), for the situation where multiple users are querying for the same data, at the same or slightly-different time. 
 
-* Connection is established between server and client using WebSocket.
-* Server sends the required data to Client at regular intervals
-* If the connection breaks, client can retry indefinitely.
+Here's a minimal flow of how push-model can work:
+
+* A Connection is established between server and client using WebSocket.
+* Server sends the required data to client at regular intervals
+* If the connection breaks, the client can retry (even indefinitely).
+* At any given point of time, all clients display the same data
 
 ### What are we building?
 
-Here's the preview of a simple real-time dashboard we will be building. It contains 4 panels - CPU Utilization, Traffic information, Data-center distribution and alerts.
+Here's the preview of a simple real-time dashboard we will be building. It contains 4 panels - CPU Utilization, Traffic information, Data-center distribution, and alerts.
 
 <img src="demo.gif" alt="Real-time dashboard preview" style="border: 1px solid #000;">
 
@@ -27,11 +30,11 @@ Here's the preview of a simple real-time dashboard we will be building. It conta
 
 [GraphQL](ll) is a query language for APIs and a runtime for fulfilling those queries with your existing data. Check out [graphql.org](https://graphql.org/) for more info if you are not familiar with GraphQL.
 
-Along with [queries](ll) and [mutations](ll), GraphQL introduced one more specification - [Subscriptions](ll). 
+Along with [queries](ll) and [mutations](ll), GraphQL introduced another specification - [Subscriptions](ll). 
 
 >  just as the list of mutations that the server supports describes all of the actions that a client can take, the list of subscriptions that the server supports describes all of the events that it can subscribe to. Just as a client can tell the server what data to refetch after it performs a mutation with a GraphQL selection, the client can tell the server what data it wants to be pushed with the subscription with a GraphQL selection. - [GraphQL blog](https://graphql.org/blog/subscriptions-in-graphql-and-relay/)
 
-For example, client can subscribe for CPU data using the following subscription syntax
+For example, the client can subscribe for CPU data using the following subscription syntax
 
 ```graphql
 subscription CPU {
@@ -41,7 +44,7 @@ subscription CPU {
 }
 ```
 
-Server can publish the data at regular intervals,
+Server can publish data at regular intervals,
 
 ```js
 pubsub.publish(CPU, { cpu: { percentage: 65 } });
@@ -49,39 +52,39 @@ pubsub.publish(CPU, { cpu: { percentage: 65 } });
 
 ## Redis PubSub
 
-Since version 2.0, Redis supports [Publish-Subscribe pattern](http://en.wikipedia.org/wiki/Publish/subscribe) using commands [PUBLISH](https://redis.io/commands/publish), [SUBSCRIBE](https://redis.io/commands/subscribe) and [UNSUBSCRIBE](https://redis.io/commands/unsubscribe). Read more about it from [Redis Documentation](https://redis.io/topics/pubsub).
+Since version 2.0, [Redis](ll) supports [Publish-Subscribe pattern](http://en.wikipedia.org/wiki/Publish/subscribe) using commands [PUBLISH](https://redis.io/commands/publish), [SUBSCRIBE](https://redis.io/commands/subscribe) and [UNSUBSCRIBE](https://redis.io/commands/unsubscribe). Read more about it from [Redis Documentation](https://redis.io/topics/pubsub).
 
-Message can be published via **channels**. If we want to send message `"hello listeners"` via channel `myradio`, simply use the `PUBLISH` command
+Messages can be published via **channels**. To send the message `"hello listeners"` via channel `myradio` - use the `PUBLISH` command
 
 ```bash
 PUBLISH myradio "hello listeners"
 ```
 
-But, a channel is useless if nobody is listening on the other side! Open another tab with `redis-cli` and subscribe to the channel `myradio`.
+But, a channel is useless with nobody to listen! Open another tab with `redis-cli` and subscribe to the channel `myradio`.
 
 ```bash
 SUBSCRIBE myradio
 ```
 
-Now, send the publish command again and watch for the same in the other terminal
+Now, send the publish command again and watch the other terminal.
 
 ![Redis PubSub in terminal](redis-pubsub-terminal.png)
 
 ### Combining GraphQL subscription & Redis PubSub
 
-We can implement GraphQL subscription specification using [Apollo](https://www.apollographql.com/)'s package - [graphql-subscriptions](https://github.com/apollographql/graphql-subscriptions). 
+GraphQL subscription specification can be implemented using [Apollo](https://www.apollographql.com/)'s package - [graphql-subscriptions](https://github.com/apollographql/graphql-subscriptions). 
 
-Using Redis as mediator for publishing events from client to server enables us horizontally scale. We can plug in [graphql-redis-subscriptions](https://github.com/davidyaha/graphql-redis-subscriptions) as PubSubEngine interface to `graphql-subscriptions`.
+Using Redis as a mediator for publishing events from client to server enables horizontal scaling. The package [graphql-redis-subscriptions](https://github.com/davidyaha/graphql-redis-subscriptions) can be plugged as a PubSubEngine interface to `graphql-subscriptions`.
 
 ## Sample Implementation
 
-For full implementation - see [github.com/nowke/realtime-dashboard-demo/](https://github.com/nowke/realtime-dashboard-demo/). We will look at the important parts here.
+For full implementation - see [github.com/nowke/realtime-dashboard-demo/](https://github.com/nowke/realtime-dashboard-demo/).
 
-We're going to build 3 components
+The sample code consists of 3 components,
 
 * Server
-* Client - user's browser, connects to server
-* Worker - mocks real events by publishing events to server
+* Client - user's browser, connects to the server
+* Worker - mocks real events by publishing events to the server
 
 ### Server
 
@@ -91,7 +94,7 @@ Install the required pacakges
 yarn add graphql apollo-server graphql-redis-subscriptions graphql-subscriptions ioredis moment
 ```
 
-If you have `redis-server` running in local at `PORT 6379`, setup the PubSub using `graphql-redis-subscriptions`. We will use it to publish messages
+Make sure `redis-server` running in `localhost` at `PORT 6379` and setup the PubSub using `graphql-redis-subscriptions`. It is used for publishing messages.
 
 **[`server/pubsub.js`](https://github.com/nowke/realtime-dashboard-demo/blob/master/server/pubsub.js)**
 ```js
@@ -101,11 +104,11 @@ const pubsub = new RedisPubSub();
 module.exports = pubsub;
 ```
 
-Define the GraphQL schema. We use,
+Define the GraphQL schema.
 
-* **Query** - for getting initial result from Redis
-* **Mutation** - to publish new messages
-* **Subscription** - websocket connection between client and server for real-time updating the graphs
+* **Query** - for getting the initial result from Redis.
+* **Mutation** - for publishing new messages.
+* **Subscription** - for data exchange in real-time between client and server.
 
 ```graphql
 const { gql } = require("apollo-server");
@@ -161,7 +164,7 @@ const schema = gql`
 module.exports = schema;
 ```
 
-I have provided helper functions to generate dummy data for each 4 panels. Refer [`server/utils/generator.js`](https://github.com/nowke/realtime-dashboard-demo/blob/master/server/utils/generator.js). Using these functions, let's write a function `publishRandomData`.
+The helper functions are provided to generate dummy data for all 4 panels - refer [`server/utils/generator.js`](https://github.com/nowke/realtime-dashboard-demo/blob/master/server/utils/generator.js). Using these data generators, write a wrapper function `publishRandomData`.
 
 ```js
 const pubsub = require("./pubsub");
@@ -182,14 +185,14 @@ const publishRandomData = async (generator, component) => {
 };
 ```
 
-We can call this function for CPU usage as below
+The function `publishRandomData` can be called for CPU usage as below.
 
 ```js
 const getCPU = () => 50;
 await publishRandomData(getCPU, "CPU")
 ```
 
-Define the resolver functions for the schema we wrote earlier (sample for CPU)
+Define the resolver functions for the previously defined schemas (sample given below for CPU)
 
 **[`server/resolvers.js`](https://github.com/nowke/realtime-dashboard-demo/blob/master/server/resolvers.js)**
 ```js
@@ -235,9 +238,9 @@ $ nodemon index.js
 🚀  Server ready at http://localhost:4000/
 ```
 
-Go to [localhost:4000](http://localhost:4000/) to open GraphQL playground.
+Go to [localhost:4000](http://localhost:4000/) to open the GraphQL playground.
 
-Subscribe to CPU percentage in **Tab 1** and hit the play button
+Subscribe to CPU percentage in **`Tab 1`** and hit the play button
 
 ```graphql
 subscription {
@@ -247,7 +250,7 @@ subscription {
 }
 ```
 
-Run the mutation for CPU in **Tab 2**, to publish random percentage value. You should receive the value as an event in **Tab 1**. Try the mutation multiple times to receive different values.
+Run the mutation for CPU in **`Tab 2`** for publishing a random percentage value. The same will be received as an event in **`Tab 1`**. Try the mutation multiple times to receive different values.
 
 ```graphql
 mutation {
@@ -257,7 +260,7 @@ mutation {
 }
 ```
 
-Run the query for CPU in **Tab 3**. You should see the last published value - this is because we have cached the recent value in Redis
+Run the query for CPU in **`Tab 3`**. The last published value is returned - this is because the recent value is cached in Redis.
 
 ```graphql
 query {
@@ -291,7 +294,7 @@ Install the required dependencies.
 yarn add apollo-boost apollo-client apollo-link-ws graphql react-apollo subscriptions-transport-ws
 ```
 
-Setup Apollo HTTP client and websocket client, since we need both type of connection to the server. HTTP server will be running at `http://localhost:4000` and websocket subscription server at `ws://localhost:4000/graphql`.
+Setup Apollo HTTP client and websocket client, since both types of connection are required. HTTP server will be running at `http://localhost:4000` and websocket subscription server at `ws://localhost:4000/graphql`.
 
 **[`client/src/App.js`](https://github.com/nowke/realtime-dashboard-demo/blob/master/client/src/App.js)**
 
@@ -351,7 +354,7 @@ class App extends Component {
 export default App;
 ```
 
-We have wrapped our `Home` component with `ApolloProvider`, which enables us to run queries and subscriptions.
+The `Home` component is wrapped with `ApolloProvider`, which enables running queries and subscriptions.
 
 Let us design CPU usage component - [CpuUsage.js](https://github.com/nowke/realtime-dashboard-demo/blob/master/client/src/components/CpuUsage.js).
 
@@ -377,10 +380,10 @@ const SUBSCRIPTION = gql`
 `;
 ```
 
-Our requirement is as follows.
+The requirement is as follows.
 
-* On initial load, data should be rendered via `query`
-* Post load, component should render the value from subscription
+* On initial load, data should be rendered via `query` (from Redis Key-value store)
+* Post load, component should render the value from subscription (from Redis PubSub channel)
 
 This can be achieved using `subscribeToMore` prop given by `Query` component in `react-apollo` - [https://www.apollographql.com/docs/react/advanced/subscriptions.html#subscribe-to-more](https://www.apollographql.com/docs/react/advanced/subscriptions.html#subscribe-to-more)
 
@@ -408,7 +411,7 @@ const CpuUsageContainer = () => (
 )
 ```
 
-Display CPU percentage inside `CpuUsage` component.
+Display CPU percentage in the `CpuUsage` component.
 
 ```jsx
 class CpuUsage extends Component {
@@ -433,7 +436,7 @@ Refer the file [CpuUsage.js](https://github.com/nowke/realtime-dashboard-demo/bl
 
 ### Worker
 
-Let us write a small script that mocks real events by calling mutation for 4 panels at regular intervals. We will use [node-schedule](https://www.npmjs.com/package/node-schedule) package.
+Real events can be mocked using a simple scheduler script by calling mutation for the 4 panels at regular intervals. The package [node-schedule](https://www.npmjs.com/package/node-schedule) can be used.
 
 Install the dependencies
 
@@ -519,11 +522,11 @@ Fetched new results for TRAFFIC
 
 ## Scaling
 
-For high-availability, server will be deployed in multiple instances connected using Load-balancer. 
+For high-availability, server program would be deployed in multiple instances connected using a Load-balancer. 
 
-Consider 4 servers `server1`, `server2`, `server3` and `server4`. When a user opens the browser (client), it can connect to any of the servers via load-balancer. All of these servers are connected to a redis cluster `redis-cluster`
+Consider 4 servers `S1`, `S2`, `S3` and `S4`. When a user opens the browser (client), it can connect to any of the servers via load-balancer. All of these servers are connected to a redis cluster `R`.
 
-If nginx is used, routing websocket requests is possible by changing the configuration. Refer [www.nginx.com/blog/websocket-nginx/](https://www.nginx.com/blog/websocket-nginx/) for details.
+If nginx is used, websocket requests can be routed by changing the configuration. Refer [www.nginx.com/blog/websocket-nginx/](https://www.nginx.com/blog/websocket-nginx/) for details.
 
 ### Architecture diagram
 
@@ -535,7 +538,7 @@ Analyzing a request flow from **Worker**,
 
 ![Request analysis](request-analysis.svg)
 
-1. Worker makes a **`POST`** request (a **mutation**) to one of the servers (via **load balancer**), say `server1`
-2. **`server1`** sends **`PUBLISH`** command to redis cluster with data for `cpu`
-3. Since all servers are subscribed to same channel in redis, all of them receive data for `cpu`
-4. Servers publish the data via websocket to all the clients.
+1. Worker makes a **`POST`** request (i.e. a **mutation**) to one of the servers (via **load balancer**), say `S1`.
+2. **`S1`** sends **`PUBLISH`** command to redis cluster with data for `cpu`.
+3. Since all servers are subscribed to same channel in redis, all of them (`S1`, `S2`, `S3` and `S4`) receive data for `cpu`.
+4. Servers publish the data via websocket to all the clients (`C1`, `C2`, `C3`, `C4`).
