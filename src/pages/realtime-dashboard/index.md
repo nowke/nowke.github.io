@@ -5,13 +5,13 @@ description: A lightweight scalable real-time dashboard using React, GraphQL sub
 permalink: /realtime-dashboard/
 ---
 
-In this post, we will be creating a simple scalable dashboard that updates in real-time using [React](ll), [GraphQL Subscriptions](ll), and [Redis PubSub](ll). Real-time dashboards are used for monitoring **infrastructure** (servers, network, services), **application traffic** (transaction volume, number of users), **alerts** (application health, notify of critical issues, downtimes) etc. In most cases, dashboards are driven by one or more datasources.
+In this post, we will be creating a simple scalable dashboard that updates in real-time using [React](https://reactjs.org/), [GraphQL Subscriptions](https://www.howtographql.com/react-apollo/8-subscriptions/), and [Redis PubSub](https://redis.io/topics/pubsub). Real-time dashboards are used for monitoring **infrastructure** (servers, network, services), **application traffic** (transaction volume, number of users), **alerts** (application health, notify of critical issues, downtimes) etc. In most cases, dashboards are driven by one or more datasources.
 
-Developers utilize a few open-source applications to create rich and useful dashboards. For example, **[Kibana](ll)** is used for visualizing application logs integrated with [ELK Stack](ll). **[Grafana](ll)** provides the platform for building variety of visualizations on top of time series databases such as [Prometheus](ll), [Graphite](ll), and [OpenTSDB](ll). But, as of today, they support only [pull-based model](https://en.wikipedia.org/wiki/Pull_technology). That is, when a user opens the browser, the application queries the datasource to render the dashboard. It is the most widely used model as compared to a [Push model](https://en.wikipedia.org/wiki/Push_technology). 
+Developers utilize a few open-source applications to create rich and useful dashboards. For example, **[Kibana](https://www.elastic.co/products/kibana)** is used for visualizing application logs integrated with [ELK Stack](https://www.elastic.co/elk-stack). **[Grafana](https://grafana.com/)** provides the platform for building variety of visualizations on top of time series databases such as [Prometheus](https://prometheus.io/), [Graphite](https://graphiteapp.org/), and [OpenTSDB](http://opentsdb.net/). But, as of today, they support only [pull-based model](https://en.wikipedia.org/wiki/Pull_technology). That is, when a user opens the browser, the application queries the datasource to render the dashboard. It is the most widely used model as compared to a [Push model](https://en.wikipedia.org/wiki/Push_technology). 
 
 ## When push-model can be used?
 
-Assume you have a dashboard consisting of ***20 panels***; querying data from multiple datasources in real-time. The User has set a refresh rate of ***5 seconds***. If, on an average ***100 users*** open the dashboard at any given time results in ***20 x 100 = 2000 requests*** every 5 seconds! This is manageable if you have good infrastructure for your underlying time-series database. Otherwise multiple heavy queries can pile-up the memory causing delay in retrieving result. This problem can be solved either by introducing an intelligent caching solution, or a simple push-model using [WebSockets](ll). It is useful (and simple), for the situation where multiple users are querying for the same data, at the same or slightly-different time. 
+Assume you have a dashboard consisting of ***20 panels***; querying data from multiple datasources in real-time. The User has set a refresh rate of ***5 seconds***. If, on an average ***100 users*** open the dashboard at any given time results in ***20 x 100 = 2000 requests*** every 5 seconds! This is manageable if you have good infrastructure for your underlying time-series database. Otherwise multiple heavy queries can pile-up the memory causing delay in retrieving result. This problem can be solved either by introducing an intelligent caching solution, or a simple push-model using [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API). It is useful (and simple), for the situation where multiple users are querying for the same data, at the same or slightly-different time. 
 
 Here's a minimal flow of how push-model can work:
 
@@ -28,9 +28,9 @@ Here's the preview of a simple real-time dashboard we will be building. It conta
 
 ## GraphQL Subscriptions
 
-[GraphQL](ll) is a query language for APIs and a runtime for fulfilling those queries with your existing data. Check out [graphql.org](https://graphql.org/) for more info if you are not familiar with GraphQL.
+[GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. Check out [graphql.org](https://graphql.org/) for more info if you are not familiar with GraphQL.
 
-Along with [queries](ll) and [mutations](ll), GraphQL introduced another specification - [Subscriptions](ll). 
+Along with [queries](https://graphql.org/learn/queries/) and [mutations](https://graphql.org/graphql-js/mutations-and-input-types/), GraphQL introduced another specification - [Subscriptions](https://www.howtographql.com/graphql-js/7-subscriptions/). 
 
 >  just as the list of mutations that the server supports describes all of the actions that a client can take, the list of subscriptions that the server supports describes all of the events that it can subscribe to. Just as a client can tell the server what data to refetch after it performs a mutation with a GraphQL selection, the client can tell the server what data it wants to be pushed with the subscription with a GraphQL selection. - [GraphQL blog](https://graphql.org/blog/subscriptions-in-graphql-and-relay/)
 
@@ -52,7 +52,7 @@ pubsub.publish(CPU, { cpu: { percentage: 65 } });
 
 ## Redis PubSub
 
-Since version 2.0, [Redis](ll) supports [Publish-Subscribe pattern](http://en.wikipedia.org/wiki/Publish/subscribe) using commands [PUBLISH](https://redis.io/commands/publish), [SUBSCRIBE](https://redis.io/commands/subscribe) and [UNSUBSCRIBE](https://redis.io/commands/unsubscribe). Read more about it from [Redis Documentation](https://redis.io/topics/pubsub).
+Since version 2.0, [Redis](https://redis.io/) supports [Publish-Subscribe pattern](http://en.wikipedia.org/wiki/Publish/subscribe) using commands [PUBLISH](https://redis.io/commands/publish), [SUBSCRIBE](https://redis.io/commands/subscribe) and [UNSUBSCRIBE](https://redis.io/commands/unsubscribe). Read more about it from [Redis Documentation](https://redis.io/topics/pubsub).
 
 Messages can be published via **channels**. To send the message `"hello listeners"` via channel `myradio` - use the `PUBLISH` command
 
