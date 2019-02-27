@@ -82,13 +82,24 @@ export default () => (
       </Row>
     </Grid>
     <br />
-    <SubHeading>Projects</SubHeading>
+    <SubHeading>Projects/Repos</SubHeading>
     <Grid style={{ padding: 0, width: "unset" }}>
       <Row>
         <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading
-              link="/realtime-dashboard"
+              link="/sicp/"
+              title="SICP Programs"
+            />
+            <Description>
+              Exercise solutions and programs for SICP - Chapter 1 and Chapter 2
+            </Description>
+          </ProjectItem>
+        </StyledCol>
+        <StyledCol lg={4} md={6} sm={6} xs={12}>
+          <ProjectItem>
+            <StyledHeading
+              link="/realtime-dashboard/"
               title="Real-time dashboard"
             />
             <Description>
