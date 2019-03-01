@@ -8,21 +8,7 @@ const getParentSlugs = slug => {
   return parentDirs.map((_, i) => parentDirs.slice(0, i + 1).join("/"));
 };
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug
-    });
-    fmImagesToRelative(node);
-  }
-};
-
-exports.createPages = async ({ graphql, actions }) => {
-  // GitHub
+const createSICPPages = async (graphql, actions) => {
   const { data } = await graphql(`
     query {
       github {
@@ -81,12 +67,32 @@ exports.createPages = async ({ graphql, actions }) => {
           context: {
             expr: `master:sicp/README.md`
           }
-        })
+        });
       }
     });
     await Promise.all(promises);
   };
   await processEntries(data.github.repository.object.entries);
+};
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+    fmImagesToRelative(node);
+  }
+};
+
+exports.createPages = async ({ graphql, actions }) => {
+  if (process.env.NETWORK === "1") {
+    // GitHub
+    await createSICPPages(graphql, actions);
+  }
 
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info

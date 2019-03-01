@@ -23,7 +23,7 @@ export default ({ data, pageContext }) => {
     .use(html)
     .processSync(contentMd).contents;
   const type = name => (/^\d/.test(name) ? "Exercise" : "Program");
-  const title = `${type(pageContext.name)} - ${pageContext.name}`;
+  const title = `SICP ${type(pageContext.name)} - ${pageContext.name}`;
 
   return (
     <Layout>
