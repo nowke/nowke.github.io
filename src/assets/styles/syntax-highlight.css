@@ -137,17 +137,19 @@ pre.dark[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background-color: inherit;
+  background-color: #eef;
+  border-color: #d5d5e9;
 }
 
 pre[class*="language-"] {
-  border-radius: unset;
+  border-radius: 3px;
 }
 
 p code[class*="language-"],
 ol code[class*="language-"] {
   font-size: 1em;
   color: rgb(212, 0, 255);
+  background-color: inherit;
   white-space: pre-wrap;
 }
 
