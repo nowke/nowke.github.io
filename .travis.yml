@@ -12,8 +12,8 @@ install:
 script:
   - yarn build
 
-deploy:
-  provider: script
-  script: yarn && yarn deploy
-  on:
-    branch: gh-pages
+# deploy:
+#   provider: script
+#   script: yarn && yarn deploy
+#   on:
+#     branch: gh-pages

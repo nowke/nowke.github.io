@@ -49,7 +49,6 @@ const Container = styled.div`
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
-
 `;
 
 const TitleHeading = styled.h1`
@@ -62,7 +61,7 @@ const TitleHeading = styled.h1`
 `;
 
 const Title = ({ children }) => (
-  <Link to="/" style={{ textDecoration: 'none', color: 'unset' }}>
+  <Link to="/" style={{ textDecoration: "none", color: "unset" }}>
     <TitleHeading>{children}</TitleHeading>
   </Link>
 );
@@ -95,10 +94,10 @@ const Social = styled.img`
   box-sizing: content-box;
 `;
 
-const SocialLink = ({ src, link }) => (
+const SocialLink = ({ src, link, alt }) => (
   <NavbarItem>
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <Social src={src} width="1.4em" height="1.6em" />
+      <Social src={src} width="1.4em" height="1.6em" alt={alt} />
     </a>
   </NavbarItem>
 );
@@ -110,12 +109,26 @@ export default () => {
         <Title>nowke</Title>
         <SocialContainer>
           <NavbarItemContainer>
-            <SocialLink src={Github} link="https://github.com/nowke" />
+            <SocialLink
+              src={Github}
+              link="https://github.com/nowke"
+              alt="Navaneesh Kumar's GitHub Profile"
+            />
             <SocialLink
               src={LinkedIn}
               link="https://www.linkedin.com/in/nowke/"
+              alt="Navaneesh Kumar's LinkedIn Profile"
             />
-            <SocialLink src={Twitter} link="https://twitter.com/inowke" />
+            <SocialLink
+              src={Twitter}
+              link="https://twitter.com/inowke"
+              alt="Navaneesh Kumar's Twitter Profile"
+            />
+            <SocialLink
+              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+              link="https://dev.to/nowke"
+              alt="Navaneesh Kumar's DEV Profile"
+            />
           </NavbarItemContainer>
         </SocialContainer>
       </Container>
