@@ -17,10 +17,10 @@ module.exports = {
         // HTTP headers
         headers: {
           // Learn about environment variables: https://gatsby.app/env-vars
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+          Authorization: `bearer ${process.env.GITHUB_TOKEN}`
         },
         // Additional options to pass to node-fetch
-        fetchOptions: {},
+        fetchOptions: {}
       }
     },
     `gatsby-plugin-react-helmet`,
@@ -52,6 +52,13 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-137812264-1",
+        head: true
       }
     }
   ]
