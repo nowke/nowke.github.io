@@ -21,11 +21,20 @@ const ProjectItem = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 `;
 
-const ItemHeading = ({ className, link, title }) => (
-  <Link to={link} className={className}>
-    {title}
-  </Link>
-);
+const ItemHeading = ({ className, link, href, title }) => {
+  if (href) {
+    return (
+      <a href={href} className={className}>
+        {title}
+      </a>
+    );
+  }
+  return (
+    <Link to={link} className={className}>
+      {title}
+    </Link>
+  );
+};
 
 const StyledHeading = styled(ItemHeading)`
   text-decoration: none;
@@ -88,7 +97,7 @@ export default () => (
         <StyledCol lg={4} md={6} sm={6} xs={12}>
           <ProjectItem>
             <StyledHeading
-              link="/sicp/"
+              href="https://nowke.github.io/hodor/SICP"
               title="SICP Programs"
             />
             <Description>
