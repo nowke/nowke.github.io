@@ -1,0 +1,49 @@
+{
+  "contents": [
+    {
+      "key": "rlviz",
+      "title": "GridWorld Reinforcement Learning",
+      "image": "gridworld-rl.png",
+      "description": "Web app: Value Iteration, Policy Iteration for GridWorld, with a feature to build custom grids.",
+      "github": "https://github.com/nowke/rlviz",
+      "link": "https://nowke.github.io/rlviz",
+      "tags": ["VueJS"]
+    },
+    {
+      "key": "realtime-dash",
+      "title": "Realtime dashboard - GraphQL subscriptions",
+      "image": "realtime-dash.png",
+      "description": "Scalable realtime dashboard using React, GraphQL subscription, and Redis PubSub",
+      "github": "https://github.com/nowke/realtime-dashboard-demo/",
+      "link": "https://nowke.github.io/realtime-dashboard/",
+      "tags": ["GraphQL", "Redis", "PubSub", "React"]
+    },
+    {
+      "key": "wumpus-rl",
+      "title": "Wumpus World Reinforcement Learning",
+      "image": "wumpus-rl.png",
+      "description": "Implement Deep Q Network for classic Wumpus World game based on OpenAI-Gym",
+      "github": "https://github.com/nowke/wumpus-rl/",
+      "link": "",
+      "tags": ["TensorFlow", "Python", "OpenAI Gym"]
+    },
+    {
+      "key": "megamart",
+      "title": "Retail Store Management System",
+      "image": "megamart.png",
+      "description": "Inventory Management, Multi-branches, Employees, Role Management, Administration, etc.",
+      "github": "https://github.com/nowke/megamart/",
+      "link": "",
+      "tags": ["Django", "Python", "MySQL"]
+    },
+    {
+      "key": "expensa",
+      "title": "Expensa",
+      "image": "expensa.png",
+      "description": "Android application for managing shared expenses, a mini-version of Splitwise",
+      "github": "https://github.com/nowke/expensa/",
+      "link": "",
+      "tags": ["Android"]
+    }
+  ]
+}

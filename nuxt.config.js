@@ -70,6 +70,13 @@ export default {
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    theme: {
+      themes: {
+        light: {
+          primary: '#4c4c9d',
+        },
+      }
+    },
   },
   /*
    ** Build configuration
