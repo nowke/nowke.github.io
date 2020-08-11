@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header />
-    <v-main class="indigo lighten-5">
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>

@@ -1,17 +1,31 @@
 <template>
   <div>
     <h4 class="text-h4 my-2">Projects</h4>
-
-    <v-row>
-      <v-col
-        :cols="4"
-        class="d-flex"
-        v-for="project in projects"
-        :key="project.key"
-      >
-        <Project :project="project" />
-      </v-col>
-    </v-row>
+    <template v-if="loading">
+      <div class="loading-container d-flex align-content-center">
+        <v-progress-circular
+          indeterminate
+          color="primary"
+          :size="100"
+          :width="5"
+        />
+      </div>
+    </template>
+    <template v-else>
+      <v-row>
+        <v-col
+          v-for="project in projects"
+          :key="project.key"
+          cols="12"
+          sm="6"
+          xl="3"
+          lg="4"
+          class="d-flex"
+        >
+          <Project :project="project" />
+        </v-col>
+      </v-row>
+    </template>
   </div>
 </template>
 
@@ -28,12 +42,22 @@ import Project from '@/components/project.vue'
 })
 class Index extends Vue {
   projects = []
+  loading = true
 
   async created() {
     const projects = await this.$content('projects').without('body').fetch()
     this.projects = projects.contents
+    this.loading = false
   }
 }
 
 export default Index
 </script>
+
+<style lang="scss" scoped>
+.loading-container {
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+</style>

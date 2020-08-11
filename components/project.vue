@@ -2,7 +2,7 @@
   <v-card class="d-flex flex-column" outlined>
     <v-img
       height="170px"
-      :src="`/thumbnails/${project.image}`"
+      :src="`/projects/${project.image}`"
       class="align-end"
       gradient="to bottom, rgba(245, 246, 252, 0.12), rgba(69, 73, 97, 0.8)"
     />
@@ -13,7 +13,7 @@
       class="text--primary"
     >
       <div>{{ project.description }}</div>
-      <v-chip v-for="tag in project.tags" class="mr-2 my-2" :key="tag">
+      <v-chip v-for="tag in project.tags" :key="tag" class="mr-2 my-2">
         {{ tag }}
       </v-chip>
     </v-card-text>

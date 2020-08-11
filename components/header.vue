@@ -2,9 +2,11 @@
   <header>
     <v-container>
       <div class="header-content">
-        <div color="primary" class="text-h5">
-          Navaneesh Kumar
-        </div>
+        <a href="/" class="text-decoration-none white--text">
+          <div color="primary" class="text-h5">
+            Navaneesh Kumar
+          </div>
+        </a>
         <v-spacer />
         <v-btn icon dark href="https://github.com/nowke/" large>
           <v-icon>mdi-github</v-icon>

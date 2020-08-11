@@ -1,5 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   /*
    ** Nuxt rendering mode
@@ -63,7 +61,14 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
-  content: {},
+  content: {
+    liveEdit: false,
+    markdown: {
+      prism: {
+        theme: '~/assets/prism-material-oceanic.css',
+      },
+    },
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -75,7 +80,7 @@ export default {
         light: {
           primary: '#4c4c9d',
         },
-      }
+      },
     },
   },
   /*

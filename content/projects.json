@@ -15,7 +15,7 @@
       "image": "realtime-dash.png",
       "description": "Scalable realtime dashboard using React, GraphQL subscription, and Redis PubSub",
       "github": "https://github.com/nowke/realtime-dashboard-demo/",
-      "link": "https://nowke.github.io/realtime-dashboard/",
+      "link": "realtime-dashboard/",
       "tags": ["GraphQL", "Redis", "PubSub", "React"]
     },
     {
