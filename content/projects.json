@@ -4,7 +4,7 @@
       "key": "rlviz",
       "title": "GridWorld Reinforcement Learning",
       "image": "gridworld-rl.png",
-      "description": "Web app: Value Iteration, Policy Iteration for GridWorld, with a feature to build custom grids.",
+      "description": "Web app: Value Iteration, Policy Iteration for GridWorld; build custom grids.",
       "github": "https://github.com/nowke/rlviz",
       "link": "https://nowke.github.io/rlviz",
       "tags": ["VueJS"]
@@ -26,6 +26,15 @@
       "github": "https://github.com/nowke/wumpus-rl/",
       "link": "",
       "tags": ["TensorFlow", "Python", "OpenAI Gym"]
+    },
+    {
+      "key": "cricviz",
+      "title": "CricViz",
+      "image": "cricviz.png",
+      "description": "Cricket ODI Matches - First Innings Scores Distribution By Year",
+      "github": "https://github.com/nowke/cricviz/",
+      "link": "https://nowke.github.io/cricviz/",
+      "tags": ["React"]
     },
     {
       "key": "megamart",

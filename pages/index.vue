@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-h4 my-2">Projects</h4>
+    <h4 class="section-heading my-2">Projects</h4>
     <template v-if="loading">
       <div class="loading-container d-flex align-content-center">
         <v-progress-circular
@@ -59,5 +59,13 @@ export default Index
   height: 50vh;
   justify-content: center;
   align-items: center;
+}
+
+.section-heading {
+  font-size: 1.9em !important;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.0073529412em !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 </style>
