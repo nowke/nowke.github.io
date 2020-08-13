@@ -1,5 +1,5 @@
 {
-  "contents": [
+  "projects": [
     {
       "key": "rlviz",
       "title": "GridWorld Reinforcement Learning",
@@ -53,6 +53,26 @@
       "github": "https://github.com/nowke/expensa/",
       "link": "",
       "tags": ["Android"]
+    }
+  ],
+  "notebooks": [
+    {
+      "key": "stats",
+      "title": "Statistics and Probability",
+      "description": "Basics of probability, descriptive statistics, Distributions, Intervals, Covariance and correlation",
+      "link": "stats/"
+    },
+    {
+      "key": "stats-ipl",
+      "title": "Basic Statistics using IPL Data",
+      "description": "Learn Quantitative Data, distributions, bivariate data using Kaggle's IPL Cricket data (2008-2018)",
+      "link": "stats-ipl/"
+    },
+    {
+      "key": "sicp",
+      "title": "SICP Programs",
+      "description": "Exercise solutions and programs for SICP - Chapter 1 and Chapter 2",
+      "link": "https://nowke.github.io/hodor/SICP"
     }
   ]
 }

@@ -25,7 +25,13 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -35,7 +41,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['@/plugins/vue-scrollactive'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -67,6 +73,8 @@ export default {
       prism: {
         theme: '~/assets/prism-material-oceanic.css',
       },
+      remarkPlugins: ['remark-math'],
+      rehypePlugins: ['rehype-katex'],
     },
   },
   /*

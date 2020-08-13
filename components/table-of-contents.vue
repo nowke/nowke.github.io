@@ -1,6 +1,15 @@
 <template>
   <nav>
-    <ul class="toc">
+    <div class="px-2 font-weight-bold text-overline">
+      On this page
+    </div>
+    <scrollactive
+      class="toc"
+      highlight-first-item
+      active-class="active-toc"
+      :offset="70"
+      tag="ul"
+    >
       <li
         v-for="link of toc"
         :key="link.id"
@@ -9,9 +18,15 @@
           'ml-3 body-2': link.depth === 3,
         }"
       >
-        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+        <NuxtLink
+          class="scrollactive-item"
+          :to="`#${link.id}`"
+          style="color: grey;"
+        >
+          {{ link.text }}
+        </NuxtLink>
       </li>
-    </ul>
+    </scrollactive>
   </nav>
 </template>
 
@@ -19,7 +34,7 @@
 export default {
   props: {
     toc: {
-      type: Object,
+      type: Array,
       default: () => null,
     },
   },
@@ -42,5 +57,11 @@ export default {
       text-decoration: none;
     }
   }
+}
+
+.active-toc {
+  color: #4c4c9d !important;
+  caret-color: #4c4c9d !important;
+  font-weight: bold;
 }
 </style>

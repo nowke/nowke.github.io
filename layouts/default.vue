@@ -2,7 +2,7 @@
   <v-app>
     <Header />
     <v-main>
-      <v-container>
+      <v-container class="pa-4">
         <nuxt />
       </v-container>
     </v-main>

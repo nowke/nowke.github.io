@@ -1,5 +1,5 @@
 <template>
-  <v-card class="d-flex flex-column" outlined>
+  <v-card class="d-flex flex-column" outlined style="width: 100%;">
     <v-img
       height="170px"
       :src="`/projects/${project.image}`"

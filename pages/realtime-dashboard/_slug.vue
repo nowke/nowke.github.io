@@ -6,6 +6,6 @@
 import contentRender from '@/utils/contentRender'
 
 export default {
-  asyncData: (ctx) => contentRender(ctx, 'stats'),
+  asyncData: (ctx) => contentRender(ctx, 'realtime-dashboard'),
 }
 </script>

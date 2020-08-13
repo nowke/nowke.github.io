@@ -23,7 +23,10 @@
     "@nuxt/content": "^1.5.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.14.0",
-    "nuxt-property-decorator": "^2.7.2"
+    "nuxt-property-decorator": "^2.7.2",
+    "rehype-katex": "^3.1.0",
+    "remark-math": "^2.0.1",
+    "vue-scrollactive": "^0.9.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

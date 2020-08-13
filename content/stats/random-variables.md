@@ -1,7 +1,7 @@
 ---
 title: Random Variables
 description: Random Variables
-position: 6
+position: 5
 nav: [{ text: "Home", href: "/" }, { text: "Statistics and Probability", href: "/stats" }, { text: "Random Variables", disabled: true}]
 ---
 
