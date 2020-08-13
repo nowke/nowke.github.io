@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="200px" viewBox="0 0 331 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>event-union</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="2" x="1" y="1" width="329" height="198"></rect>
+        <circle id="Oval" stroke="#000000" stroke-width="2" opacity="0.648211051" cx="84.5" cy="100.5" r="69.5"></circle>
+        <text id="A-=-13" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#000000">
+            <tspan x="44" y="124">A = 13</tspan>
+        </text>
+        <text id="A-∩-B" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#000000">
+            <tspan x="139" y="39">A ∩ B</tspan>
+        </text>
+        <ellipse id="Oval-2" stroke="#000000" stroke-width="2" opacity="0.547044837" cx="183.5" cy="101" rx="52.5" ry="52"></ellipse>
+        <text id="B-=-4" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#000000">
+            <tspan x="172" y="124">B = 4</tspan>
+        </text>
+        <text id="1" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#000000">
+            <tspan x="139" y="111">1</tspan>
+        </text>
+        <path d="M147.5,41.5 L141.5,92.5" id="Line" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+        <path id="Line-decoration-1" d="M141.5,92.5 L145.741337,82.1244972 L139.782434,81.4234497 L141.5,92.5 Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+        <text id="A-∪-B-=-13-+-4---1-=" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#000000">
+            <tspan x="106" y="189">A </tspan>
+            <tspan x="122.013672" y="189" font-family="AppleSymbols, Apple Symbols">∪</tspan>
+            <tspan x="131.567383" y="189"> B = 13 + 4 - 1 = 16</tspan>
+        </text>
+    </g>
+</svg>

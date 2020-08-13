@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="200px" viewBox="0 0 331 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>event-sample-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="331" height="200"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle">
+            <use fill="#F5A623" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <rect stroke="#000000" stroke-width="2" x="1" y="1" width="329" height="198"></rect>
+        </g>
+        <circle id="Oval" stroke="#000000" stroke-width="2" fill="#4A90E2" cx="133.5" cy="101.5" r="69.5"></circle>
+        <text id="Ā" font-family="ArialMT, Arial" font-size="30" font-weight="normal" fill="#000000">
+            <tspan x="271" y="165">Ā</tspan>
+        </text>
+        <text id="A" font-family="ArialMT, Arial" font-size="30" font-weight="normal" fill="#FFFFFF">
+            <tspan x="123" y="109">A</tspan>
+        </text>
+    </g>
+</svg>

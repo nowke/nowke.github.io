@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h4 class="section-heading my-2">Projects</h4>
     <template v-if="loading">
       <div class="loading-container d-flex align-content-center">
         <v-progress-circular
@@ -12,6 +11,7 @@
       </div>
     </template>
     <template v-else>
+      <h4 class="section-heading my-2">Projects</h4>
       <v-row>
         <v-col
           v-for="project in projects"
