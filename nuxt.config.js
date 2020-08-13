@@ -97,6 +97,6 @@ export default {
    */
   build: {},
   generate: {
-    routes: ['/stats'],
+    routes: ['/stats', '/realtime-dashboard', '/stats-ipl'],
   },
 }
