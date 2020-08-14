@@ -20,23 +20,11 @@
     <v-spacer />
     <v-card-actions class="d-flex align-end">
       <v-spacer />
-      <v-btn
-        v-if="project.github"
-        text
-        color="primary"
-        :href="project.github"
-        target="_blank"
-      >
+      <v-btn v-if="project.github" text color="primary" :href="project.github">
         <v-icon small class="mr-1">mdi-github</v-icon>
         GitHub
       </v-btn>
-      <v-btn
-        v-if="project.link"
-        text
-        color="primary"
-        :href="project.link"
-        target="_blank"
-      >
+      <v-btn v-if="project.link" text color="primary" :href="project.link">
         <v-icon small class="mr-1">mdi-link</v-icon>
         Link
       </v-btn>

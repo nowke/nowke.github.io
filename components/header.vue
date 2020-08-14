@@ -6,7 +6,7 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <a href="/" class="text-decoration-none white--text">
-        <div color="primary" class="text-h5">
+        <div color="primary" class="text-h6 text-sm-h5">
           Navaneesh Kumar
         </div>
       </a>
@@ -14,13 +14,31 @@
       <v-btn icon dark href="https://github.com/nowke/" large>
         <v-icon>mdi-github</v-icon>
       </v-btn>
-      <v-btn icon dark href="https://www.linkedin.com/in/nowke/" large>
+      <v-btn
+        icon
+        dark
+        href="https://www.linkedin.com/in/nowke/"
+        large
+        class="d-none d-sm-inline-flex"
+      >
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
-      <v-btn icon dark href="https://twitter.com/inowke" large>
+      <v-btn
+        icon
+        dark
+        href="https://twitter.com/inowke"
+        large
+        class="d-none d-sm-inline-flex"
+      >
         <v-icon>mdi-twitter</v-icon>
       </v-btn>
-      <v-btn icon dark href="https://dev.to/nowke" large>
+      <v-btn
+        icon
+        dark
+        href="https://dev.to/nowke"
+        large
+        class="d-none d-sm-inline-flex"
+      >
         <v-icon>mdi-dev-to</v-icon>
       </v-btn>
     </v-app-bar>
@@ -52,7 +70,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({ name: 'Header' })
 class Header extends Vue {
-  drawer = true
+  drawer = false
 }
 
 export default Header

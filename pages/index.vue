@@ -1,77 +1,78 @@
 <template>
-  <div class="pb-16">
-    <template v-if="loading">
-      <div class="loading-container d-flex align-content-center">
-        <v-progress-circular
-          indeterminate
-          color="primary"
-          :size="100"
-          :width="5"
-        />
-      </div>
-    </template>
-    <template v-else>
-      <h4 class="section-heading my-2">Projects</h4>
-      <v-row>
-        <v-col
-          v-for="project in projects"
-          :key="project.key"
-          cols="12"
-          sm="6"
-          xl="3"
-          lg="4"
-          class="d-flex"
-        >
-          <Project :project="project" />
-        </v-col>
-      </v-row>
+  <div>
+    <div class="pb-16">
+      <template v-if="loading">
+        <div class="loading-container d-flex align-content-center">
+          <v-progress-circular
+            indeterminate
+            color="primary"
+            :size="100"
+            :width="5"
+          />
+        </div>
+      </template>
+      <template v-else>
+        <v-card flat outlined class="mb-4 indigo lighten-5">
+          <v-card-text class="black--text about-text">
+            Hello! I am Navaneesh Kumar, a realistic and pragmatic software
+            developer. I thrive for productivity as a programmer, and as a human
+            being. Professionally, I help build robust technologies and deliver
+            quality results. <br /><br />
 
-      <h4 class="section-heading my-2">Notebooks</h4>
-      <v-row>
-        <v-col
-          v-for="notebook in notebooks"
-          :key="notebook.key"
-          cols="12"
-          sm="6"
-          xl="3"
-          lg="4"
-          class="d-flex"
-        >
-          <v-card class="d-flex flex-column" outlined style="width: 100%;">
-            <v-card-title>{{ notebook.title }}</v-card-title>
-            <v-card-text v-if="notebook.description" class="text--primary">
-              {{ notebook.description }}
-            </v-card-text>
-            <v-spacer />
-            <v-card-actions class="d-flex align-end">
-              <v-spacer />
-              <v-btn
-                v-if="notebook.link"
-                text
-                color="primary"
-                :href="notebook.link"
-                target="_blank"
-              >
-                <v-icon small class="mr-1">mdi-eye</v-icon>
-                View
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </template>
+            To get in touch, connect me on LinkedIn -
+            <a href="https://www.linkedin.com/in/nowke/">
+              linkedin.com/in/nowke/
+            </a>
+          </v-card-text>
+        </v-card>
+        <h4 class="section-heading my-2">Projects</h4>
+        <v-row>
+          <v-col
+            v-for="project in projects"
+            :key="project.key"
+            cols="12"
+            sm="6"
+            xl="3"
+            lg="4"
+            class="d-flex"
+          >
+            <project :project="project" />
+          </v-col>
+        </v-row>
+
+        <h4 class="section-heading my-2">Notebooks</h4>
+        <v-row>
+          <v-col
+            v-for="notebook in notebooks"
+            :key="notebook.key"
+            cols="12"
+            sm="6"
+            xl="3"
+            lg="4"
+            class="d-flex"
+          >
+            <notebook :notebook="notebook" />
+          </v-col>
+        </v-row>
+      </template>
+    </div>
+    <app-footer v-if="!loading" />
   </div>
 </template>
 
 <script>
 import { Component, Vue } from 'nuxt-property-decorator'
 
-import Project from '@/components/project.vue'
+import footer from '@/components/footer.vue'
+import project from '@/components/project.vue'
+import notebook from '@/components/notebook.vue'
 
 @Component({
   name: 'index',
   components: {
-    Project,
+    'app-footer': footer,
+    project,
+    notebook,
   },
 })
 class Index extends Vue {
@@ -103,5 +104,10 @@ export default Index
   line-height: 2.5rem;
   letter-spacing: 0.0073529412em !important;
   font-family: 'Roboto', sans-serif !important;
+}
+
+.about-text {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 </style>

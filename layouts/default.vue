@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Header />
+    <app-header />
     <v-main>
       <v-container class="pa-4">
         <nuxt />
@@ -12,12 +12,12 @@
 <script>
 import { Component, Vue } from 'nuxt-property-decorator'
 
-import Header from '@/components/header.vue'
+import header from '@/components/header.vue'
 
 @Component({
   name: 'default',
   components: {
-    Header,
+    'app-header': header,
   },
 })
 class Default extends Vue {}
