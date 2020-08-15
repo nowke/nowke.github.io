@@ -46,6 +46,23 @@ export default {
       default: () => null,
     },
   },
+  head() {
+    return {
+      title: this.page.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.page.description,
+        },
+      ],
+    }
+  },
 }
 </script>
 

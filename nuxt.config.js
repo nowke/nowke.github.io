@@ -14,7 +14,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    titleTemplate: 'Navaneesh Kumar | nowke.github.io',
+    titleTemplate: '%s | Navaneesh Kumar | nowke.github.io',
     title: '',
     meta: [
       { charset: 'utf-8' },

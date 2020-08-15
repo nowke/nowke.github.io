@@ -25,6 +25,22 @@
             </a>
           </v-card-text>
         </v-card>
+
+        <h4 class="section-heading my-2">Recent Posts</h4>
+        <v-row>
+          <v-col
+            v-for="post in posts"
+            :key="post.id"
+            cols="12"
+            sm="6"
+            xl="3"
+            lg="4"
+            class="d-flex"
+          >
+            <post :post="post" />
+          </v-col>
+        </v-row>
+
         <h4 class="section-heading my-2">Projects</h4>
         <v-row>
           <v-col
@@ -64,6 +80,7 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 import footer from '@/components/footer.vue'
+import post from '@/components/post.vue'
 import project from '@/components/project.vue'
 import notebook from '@/components/notebook.vue'
 
@@ -71,27 +88,52 @@ import notebook from '@/components/notebook.vue'
   name: 'index',
   components: {
     'app-footer': footer,
+    post,
     project,
     notebook,
   },
 })
 class Index extends Vue {
   projects = []
+  posts = []
   notebooks = []
   loading = true
 
   async created() {
     const contents = await this.$content('contents').without('body').fetch()
+    const posts = await fetch(
+      'https://dev.to/api/articles?username=nowke'
+    ).then((res) => res.json())
+
     this.projects = contents.projects
     this.notebooks = contents.notebooks
+    this.posts = posts
     this.loading = false
+  }
+
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Navaneesh Kumar (nowke) - personal website',
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Navaneesh Kumar (nowke) - personal website',
+        },
+      ],
+    }
   }
 }
 
 export default Index
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .loading-container {
   height: 50vh;
   justify-content: center;
@@ -99,9 +141,9 @@ export default Index
 }
 
 .section-heading {
-  font-size: 1.9em !important;
-  font-weight: 400;
-  line-height: 2.5rem;
+  font-size: 1.5em !important;
+  font-weight: 500;
+  line-height: 1.8rem;
   letter-spacing: 0.0073529412em !important;
   font-family: 'Roboto', sans-serif !important;
 }
@@ -109,5 +151,22 @@ export default Index
 .about-text {
   font-size: 1.2em;
   line-height: 1.5;
+}
+
+.item-title {
+  word-break: break-word;
+  font-size: 1.15rem;
+  padding: 8px 16px;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover,
+  a:active {
+    color: #4c4c9d;
+  }
 }
 </style>

@@ -6,11 +6,13 @@
       class="align-end"
       gradient="to bottom, rgba(245, 246, 252, 0.12), rgba(69, 73, 97, 0.8)"
     />
-    <v-card-title>{{ project.title }}</v-card-title>
+    <v-card-title class="item-title">
+      <a :href="project.title_link">{{ project.title }}</a>
+    </v-card-title>
 
     <v-card-text
       v-if="project.description || project.tags.length"
-      class="text--primary"
+      class="text--primary pb-1"
     >
       <div>{{ project.description }}</div>
       <v-chip v-for="tag in project.tags" :key="tag" class="mr-2 my-2">
