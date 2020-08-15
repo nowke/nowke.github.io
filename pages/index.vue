@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pb-16">
+    <v-container class="pa-4 pb-16">
       <template v-if="loading">
         <div class="loading-container d-flex align-content-center">
           <v-progress-circular
@@ -55,7 +55,7 @@
           </v-col>
         </v-row>
       </template>
-    </div>
+    </v-container>
     <app-footer v-if="!loading" />
   </div>
 </template>

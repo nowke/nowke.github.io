@@ -6,9 +6,3 @@
     </v-col>
   </v-footer>
 </template>
-
-<style lang="scss" scoped>
-.footer {
-  margin: -16px;
-}
-</style>
