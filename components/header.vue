@@ -45,7 +45,7 @@
 
     <v-navigation-drawer v-model="drawer" app clipped class="pa-4">
       <v-avatar size="150" class="mb-2">
-        <img src="https://github.com/nowke.png" alt="Navaneesh Kumar" />
+        <img src="/avatar.png" alt="Navaneesh Kumar" />
       </v-avatar>
       <div class="text-h5 font-weight-bold">Navaneesh Kumar</div>
       <div class="text-body-1">
