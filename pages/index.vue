@@ -154,9 +154,9 @@ export default Index
 }
 
 .item-title {
-  word-break: break-word;
-  font-size: 1.15rem;
-  padding: 8px 16px;
+  word-break: break-word !important;
+  font-size: 1.15rem !important;
+  padding: 8px 16px !important;
 
   a:link,
   a:visited {
