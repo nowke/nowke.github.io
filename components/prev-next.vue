@@ -49,7 +49,7 @@ export default {
 .hover-underline:link,
 .hover-underline:visited {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.1em !important;
 }
 .hover-underline:hover,
 .hover-underline:active {

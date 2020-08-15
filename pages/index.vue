@@ -149,8 +149,8 @@ export default Index
 }
 
 .about-text {
-  font-size: 1.2em;
-  line-height: 1.5;
+  font-size: 1.2em !important;
+  line-height: 1.5 !important;
 }
 
 .item-title {
