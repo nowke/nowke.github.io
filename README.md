@@ -1,5 +1,7 @@
 # nowke.github.io
 
+My Personal portfolio site - built using [NuxtJS](https://nuxtjs.org/) and [Vuetify](https://vuetifyjs.com)
+
 ## Build Setup
 
 ```bash
@@ -18,3 +20,9 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Deploy
+
+```bash
+$ yarn deploy
+```
