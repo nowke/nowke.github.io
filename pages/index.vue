@@ -16,8 +16,8 @@
           <v-card-text class="black--text about-text">
             Hello! I am Navaneesh Kumar, a realistic and pragmatic software
             developer. I thrive for productivity as a programmer, and as a human
-            being. Professionally, I help build robust technologies and deliver
-            quality results. <br /><br />
+            being. Professionally, I contribute to building robust technologies
+            and deliver quality results. <br /><br />
 
             To get in touch, connect me on LinkedIn -
             <a href="https://www.linkedin.com/in/nowke/">
