@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="425px" height="162px" viewBox="0 0 425 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>iqr</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#4A4A4A" stroke-width="2" x="1" y="55" width="423" height="71"></rect>
+        <path d="M214.5,55.9981884 L214.5,125" id="Line" stroke="#417505" stroke-width="2" stroke-linecap="square"></path>
+        <path d="M319.5,55.9981884 L319.5,125" id="Line" stroke="#4A90E2" stroke-width="2" stroke-linecap="square"></path>
+        <path d="M104.5,55.5 L104.5,125.564256" id="Line-2" stroke="#D0021B" stroke-width="2" stroke-linecap="square"></path>
+        <text id="Q₂-(median)" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#417505">
+            <tspan x="200.603516" y="22">Q</tspan>
+            <tspan x="219.271484" y="22" font-family="LucidaGrande, Lucida Grande">₂</tspan>
+            <tspan x="185.373047" y="50" font-family="LucidaGrande, Lucida Grande" font-size="14">(median)</tspan>
+        </text>
+        <text id="Q₁-(first-quartile)" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#D0021B">
+            <tspan x="93.6035156" y="22">Q</tspan>
+            <tspan x="112.271484" y="22" font-family="LucidaGrande, Lucida Grande">₁</tspan>
+            <tspan x="61.625" y="50" font-family="LucidaGrande, Lucida Grande" font-size="14">(first quartile)</tspan>
+        </text>
+        <text id="Q₃-(third-quartile)" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#4A90E2">
+            <tspan x="308.603516" y="22">Q</tspan>
+            <tspan x="327.271484" y="22" font-family="LucidaGrande, Lucida Grande">₃</tspan>
+            <tspan x="273.931641" y="50" font-family="LucidaGrande, Lucida Grande" font-size="14">(third quartile)</tspan>
+        </text>
+        <text id="IQR" font-family="ArialMT, Arial" font-size="28" font-weight="normal" fill="#4A4A4A">
+            <tspan x="188.610352" y="156">IQR</tspan>
+        </text>
+        <path d="M244.5,148.5 L320,148.5" id="Line-3" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+        <path id="Line-3-decoration-1" d="M320,148.5 L309.2,145.5 L309.2,151.5 L320,148.5 Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+        <path d="M184.001543,148.5 L104,148.5" id="Line-3" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+        <path id="Line-3-decoration-1" d="M104,148.5 L114.8,151.5 L114.8,145.5 L104,148.5 Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"></path>
+    </g>
+</svg>
